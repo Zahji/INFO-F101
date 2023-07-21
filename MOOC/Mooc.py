@@ -299,3 +299,14 @@ def catalan(n):
             c=c*i
     d=(b)//(c*a)
     return d
+
+#------------------------------- Exercice 9 --------------------------------#
+
+def bat(joueur_1,joueur_2):
+    res=True
+    if (joueur_1==0 and joueur_2==2) or (joueur_1==2 and joueur_2==1) or (joueur_1==1 and joueur_2==0):
+        return res
+    else:
+        return False
+    
+#------------------------------- Exercice 10 --------------------------------#
