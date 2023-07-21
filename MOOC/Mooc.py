@@ -283,3 +283,19 @@ def rac_eq_2nd_deg(a, b, c):
 
 resultat = rac_eq_2nd_deg(1.0, 1.0,-2.0)
 print(resultat)
+
+#------------------------------- Exercice 8 --------------------------------#
+
+def catalan(n):
+    a=1
+    b=1
+    c=1
+    if n>=0:
+        for i in range(1,n+1):
+            a=a*i
+        for i in range(1,2*n+1):
+            b=b*i
+        for i in range(1,n+2):
+            c=c*i
+    d=(b)//(c*a)
+    return d
