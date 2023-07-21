@@ -1,6 +1,6 @@
-# Python_Exos
+# INFO-F101
 
-> Python_Exos_Mooc
+> MOOC
 
 The MOOC.py file contains exercises from the MOOC Fun website, related to the INFO-F101 programming course at ULB. 
 However, it is important to note that not all exercises are included in the MOOC.py file. 
