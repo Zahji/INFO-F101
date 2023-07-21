@@ -308,5 +308,175 @@ def bat(joueur_1,joueur_2):
         return res
     else:
         return False
-    
-#------------------------------- Exercice 10 --------------------------------#
+
+ 
+#------------------------------ MOOC PARTIE 5 -----------------------------#   
+#------------------------------- Exercice 1 -------------------------------#
+
+def transcription_clavier(texte):
+    return texte.replace('%','M')
+
+#------------------------------- Exercice 2 -------------------------------#
+
+def plus_grand_bord(mot):
+    i = 0
+    while mot[i:] != mot[:-i]:
+        i += 1
+    return mot[i:]
+
+#------------------------------- Exercice 3 -------------------------------#
+
+def premier(n) :
+    r = (n-1)
+    bo = True
+    for r in range(r,1,-1) :
+        a = n%r
+        if a == 0 :
+            bo = False
+    if n==1 or n==0 :
+        bo = False
+    return(bo)
+def prime_numbers(nb) :
+    i = 0
+    e = 2
+    c = []
+    if  type(nb) != int or nb < 0:
+        c = None
+    else :
+        while i < nb :
+            f = premier(e)
+            if f :
+                c.append(e)
+                i+=1
+            e+=1
+    return c
+
+#------------------------------- Exercice 4 -------------------------------#
+
+def anagrammes(v, w):
+    return sorted(v) == sorted(w)
+
+#------------------------------- Exercice 5 -------------------------------#
+
+def dupliques(v):
+    res=False
+    for lettre in v:
+        if v.count(lettre)>=2:
+            res = True
+    return res
+
+#------------------------------- Exercice 6 -------------------------------#
+
+def my_insert(a,b):
+    x=[]
+    if type(b) is int :
+        for i in a:
+            x.append(i)
+        x.append(b)
+        x=sorted(x)
+    else:
+        x=None
+    return(x)
+
+#------------------------------- Exercice 7 -------------------------------#
+
+def my_pow(m, b):
+    if type(b) == float and type(m) == int:
+        list_pow = []
+        for i in range(m):
+            list_pow.append(b ** i)
+    else:
+        list_pow = None
+
+    return list_pow
+print(my_pow(8, 2.4))
+
+#------------------------------- Exercice 8 -------------------------------#
+
+def decompresse(lst):
+    t = [element[1] for element in lst for repetition in range(element[0])]
+    return t
+print(decompresse([(4, 1), (0, 2), (2, 'test'), (3, 3), (1, 'bonjour')]))
+
+#------------------------------- Exercice 9 -------------------------------#
+
+def init_mat(m, n):
+    return [[0 for j in range(n)] for i in range(m)]
+print(init_mat(2,3))
+
+#------------------------------- Exercice 10 -------------------------------#
+
+def print_mat(M) :
+    if M!=[] :
+        for i in M:
+            for j in i :
+                print(j,end =" ")
+            print(end="\n")
+    else:
+        print("")
+ma_matrice = eval(input())
+print_mat(ma_matrice)
+
+def trace(M) :
+    x=0
+    n=0
+    for i in M:
+        x = x + i[n]
+        n=n+1
+    return x
+
+#------------------------------- Exercice 11 -------------------------------#
+
+def trace(M):
+    sum = 0 
+    n = len(M) 
+    for i in range(n):
+        sum += M[i][i] 
+    return sum
+
+#------------------------------ MOOC PARTIE 6 -----------------------------#   
+#------------------------------- Exercice 1 -------------------------------#
+
+def inventaire(x,y):
+    d=set()
+    for i in y:
+        d.add(x[i])
+    return d
+
+#------------------------------- Exercice 2 -------------------------------#
+
+def calcul_prix(produits, catalogue):
+    prix_total = 0
+    for e in produits: 
+        prix_total += produits[e] * catalogue[e]
+    return prix_total
+
+#------------------------------- Exercice 3 -------------------------------#
+
+from math import *
+def bonne_planete(diametre):
+    if pi*(diametre)**2 >= 50*1000:
+        res=True
+    else :
+        res=False
+    return res
+k = float(input())
+if bonne_planete(k):
+    print("Bonne planète")
+else:
+    print("Trop petite")
+
+#------------------------------- Exercice 4 -------------------------------#
+
+def check_rows(grid):
+    n=1
+    for i in grid:
+        for j in range(len(i)):
+            if i[j] in i[j+1:]:
+                n=0
+    if n == 1 :
+        return True
+    else:
+        return False
+
+
