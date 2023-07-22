@@ -8,7 +8,7 @@ def is_prime(n):
             return False
     return True
 
-# 002 Liste des Nombres premiers dans un intervalle ?
+# 002 Nombres premiers dans un intervalle ?
 
 def is_prime(n):
     for d in range(2,n):
@@ -40,7 +40,7 @@ def is_perfect(nb):
     else:
         return False
 
-#004
+#004 Nombre Parfait dans un intervalle ?
 
 def get_dividers(n):
     dividers_list = []
@@ -63,3 +63,13 @@ def get_perfects_list(inf, sup):
     return perfects_list
 
 print(get_perfects_list(1, 100))
+
+#005 Valeur Factorielle ?
+
+def factorial(nb):
+    if nb == 0 or nb == 1:
+        return 1
+    product = 1
+    for num in range(1, nb+1):
+        product = product * num
+    return product
