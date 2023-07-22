@@ -8,6 +8,16 @@ def is_prime(n):
             return False
     return True
 
+# 002 Liste des Nombres premiers dans un intervalle ?
+
+def get_primes_list(inf, sup):
+    primes_list = []
+    for nbr in range(inf, sup+1):
+        if is_prime(nbr):
+            primes_list.append(nbr)
+    return primes_list
+
+print(get_primes_list(1, 100))
 
 
 
