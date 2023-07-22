@@ -39,3 +39,27 @@ def is_perfect(nb):
         return True
     else:
         return False
+
+#004
+
+def get_dividers(n):
+    dividers_list = []
+    for divider in range(1, n+1):
+        if n % divider == 0:
+            dividers_list.append(divider)
+    return dividers_list
+
+def is_perfect(nb):
+    if sum(get_dividers(nb)[:-1]) == nb:
+        return True
+    else:
+        return False
+
+def get_perfects_list(inf, sup):
+    perfects_list = []
+    for nbr in range(inf, sup+1):
+        if is_perfect(nbr):
+            perfects_list.append(nbr)
+    return perfects_list
+
+print(get_perfects_list(1, 100))
