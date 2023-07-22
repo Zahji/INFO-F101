@@ -73,3 +73,5 @@ def factorial(nb):
     for num in range(1, nb+1):
         product = product * num
     return product
+
+#006
