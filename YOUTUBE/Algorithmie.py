@@ -211,3 +211,11 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n-1) + fibonacci(n-2)
+
+#017 Nombre Triangulaire ?
+
+def triangulaire(n):
+    total = 0
+    for i in range(1, n+1):
+        total += 1
+    return total
