@@ -225,3 +225,11 @@ def triangulaire(n):
 def triangulaire_formule(n):
     return (n*(n+1))/2
 
+#019 Diviseurs d'un Nombre ? 
+
+def get_dividers(n):
+    dividers_list = []
+    for divider in range(1, n+1):
+        if n % divider == 0:
+            dividers_list.append(divider)
+    return dividers_list
