@@ -124,7 +124,7 @@ def binary_to_decimal(n):
         total += int(bit) * 2**i
     return total
 
-#011 Traduire du Morse
+#011 Traduire du Morse ?
 
 def word_to_morse(word):
      code = { "a" : ".-",
@@ -169,7 +169,7 @@ def word_to_morse(word):
           morse_word.append(code[char.lower()])
      return " ".join(morse_word)
      
-#012 Traduire en Morse
+#012 Traduire en Morse ?
 
 def string_to_word(string):
      string = string.split(" ")
@@ -177,3 +177,11 @@ def string_to_word(string):
      for word in string:
           morse_string.append(word_to_morse(word))
      return " ".join(morse_string)
+
+#013 Inverser un mot ?
+
+def reverse(word):
+    nv_mot = ""
+    for lettre in word:
+        nv_mot = lettre + nv_mot
+    return nv_mot
