@@ -123,3 +123,55 @@ def binary_to_decimal(n):
     for i, bit in enumerate(n[::-1]):
         total += int(bit) * 2**i
     return total
+
+#011 Traduire du Morse
+
+def word_to_morse(word):
+     code = { "a" : ".-",
+             "b" : "-...",
+             "c" : "-.-.",
+             "d" : "-..",
+             "e" : ".",
+             "f" : "..-.",
+             "g" : "--.",
+             "h" : "....",
+             "i" : "..",
+             "j" : ".---",
+             "k" : "-.-",
+             "l" : ".-..",
+             "m" : "--",
+             "n" : "-.",
+             "o" : "---",
+             "p" : ".--.",
+             "q" : "--.-",
+             "r" : ".-.",
+             "s" : "...",
+             "t" : "-",
+             "u" : "..-",
+             "v" : "...-",
+             "w" : ".--",
+             "x" : "-..-",
+             "y" : "-.--",
+             "z" : "--..",
+             "1" : ".----",
+             "2" : "..---",
+             "3" : "...--",
+             "4" : "....-",
+             "5" : ".....",
+             "6" : "-....",
+             "7" : "--...",
+             "8" : "---..",
+             "9" : "----.",
+             "0" : "-----"
+        }
+     morse_word = []
+     for char in word:
+          morse_word.append(code[char.lower()])
+     return " ".join(morse_word)
+     
+
+     string = string.split(" ")
+     morse_string = []
+     for word in string:
+          morse_string.append(word_to_morse(word))
+     return " ".join(morse_string)
