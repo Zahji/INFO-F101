@@ -243,3 +243,15 @@ def is_power(n, p):
         elif i**p == n:
             return True
         
+#021 Puissance d'un nombre :
+
+def power(n,p):
+    if p == 0:
+        return 1
+    elif p == 1:
+        return n
+    else:
+        total = 1
+        for i in range(p):
+            total *= n
+            return total
