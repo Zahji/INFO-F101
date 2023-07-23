@@ -169,7 +169,9 @@ def word_to_morse(word):
           morse_word.append(code[char.lower()])
      return " ".join(morse_word)
      
+#012 Traduire en Morse
 
+def string_to_word(string):
      string = string.split(" ")
      morse_string = []
      for word in string:
