@@ -23,8 +23,6 @@ def get_primes_list(inf, sup):
             primes_list.append(nbr)
     return primes_list
 
-print(get_primes_list(1, 100))
-
 # 003 Nombre Parfait ?
 
 def get_dividers(n):
@@ -62,8 +60,6 @@ def get_perfects_list(inf, sup):
             perfects_list.append(nbr)
     return perfects_list
 
-print(get_perfects_list(1, 100))
-
 #005 Valeur Factorielle ?
 
 def factorial(nb):
@@ -99,4 +95,12 @@ def cmplt(number):
     return new_number
 
 #008 Conversion Temps
+
+def convert_seconds(seconde):
+    heure = seconde // 3600
+    seconde = seconde - 3600 * heure
+    minute = seconde // 60
+    seconde = seconde - 60 *minute
+    return heure, minute, seconde
+
 
