@@ -113,3 +113,13 @@ def convert_binaire(n):
         resultat.append(reste)
     resultat.reverse()
     return "".join(map(str, resultat))
+
+#010 Nombre binaire en décimal ?
+
+def binary_to_decimal(n):
+    if "0b" in n:
+        n = n.replace("0b", "")
+    total = 0
+    for i, bit in enumerate(n[::-1]):
+        total += int(bit) * 2**i
+    return total
