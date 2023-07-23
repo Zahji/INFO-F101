@@ -103,4 +103,13 @@ def convert_seconds(seconde):
     seconde = seconde - 60 *minute
     return heure, minute, seconde
 
+#009 Nombre décimal en binaire ?
 
+def convert_binaire(n):
+    resultat = []
+    while n >= 1:
+        reste = n % 2
+        n = n // 2
+        resultat.append(reste)
+    resultat.reverse()
+    return "".join(map(str, resultat))
