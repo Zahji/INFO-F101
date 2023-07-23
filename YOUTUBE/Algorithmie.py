@@ -74,4 +74,10 @@ def factorial(nb):
         product = product * num
     return product
 
-#006
+#006 Nombre spy ?
+
+from math import prod
+def spy_number(n):
+    sum_n = sum(map(int, list(str(n))))
+    product_n = prod(map(int, list(str(n))))
+    return sum_n == product_n
