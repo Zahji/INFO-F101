@@ -94,7 +94,7 @@ def cmplt(number):
             new_number += "0"
     return new_number
 
-#008 Conversion Temps
+#008 Conversion Temps ?
 
 def convert_seconds(seconde):
     heure = seconde // 3600
@@ -185,3 +185,12 @@ def reverse(word):
     for lettre in word:
         nv_mot = lettre + nv_mot
     return nv_mot
+
+#014 Fontion Len() ?
+
+def length(liste):
+    total = 0
+    for element in liste:
+        total += 1
+    return total
+
