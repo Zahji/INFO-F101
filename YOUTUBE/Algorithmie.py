@@ -263,3 +263,15 @@ def sum_power(n, k):
     for i in range(k+1):
         total = total + n ** i
     return total
+
+#023 Identité Remarquable ?
+
+def identite1(a, b):
+    return (a+b)**2
+
+def identite2(a,b):
+    x = a**2
+    y = 2*a*b
+    z = b**2
+    return x, y, z
+
