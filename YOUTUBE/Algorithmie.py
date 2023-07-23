@@ -194,3 +194,15 @@ def length(liste):
         total += 1
     return total
 
+#015 Anagrammes ?
+
+def anagrame(word1, word2):
+    if len(word1) != len(word2)
+        return False
+    if sorted(word1.upper()) == sorted(word2.upper()):
+        return True
+    else:
+        return False
+
+
+
