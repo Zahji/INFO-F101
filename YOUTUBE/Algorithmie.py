@@ -284,3 +284,19 @@ def somme_binaire(binaire1, binaire2):
         binaire2 = binaire2.replace("0b", "")
     somme = int(binaire1, 2) + int(binaire2, 2)
     return bin(somme)
+
+#025 Triangle Pascal ?
+
+def triangle_pascal(n):
+    if n == 0:
+        return []
+    pascal = [[1]]
+    for i in range(1,n):
+        line = [1]
+        for j in range(len(pascal)):
+            if j+1 < len(pascal):
+                line.append(pascal[i-1][j] + pascal[i-1][j+1])
+        line.append(1)
+        pascal.append(line)
+    return pascal
+
