@@ -81,3 +81,22 @@ def spy_number(n):
     sum_n = sum(map(int, list(str(n))))
     product_n = prod(map(int, list(str(n))))
     return sum_n == product_n
+
+#007 Complément d'un Nombre ?
+
+def cmplt(number):
+    if isinstance(number,int):
+        number = bin(number)
+    if "0b" in number:
+        number = number.replace("0b", "")
+
+    new_number = ""
+    for bit in number:
+        if bit == "0":
+            new_number += "1"
+        else:
+            new_number += "0"
+    return new_number
+
+#008 Conversion Temps
+
