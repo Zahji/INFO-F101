@@ -1,6 +1,6 @@
 # https://www.youtube.com/watch?v=iNeqb-URBj4&ab_channel=Foxxpy-Mathématiquesetalgorithmie
 
-# 001 Nombre premier ?
+#001 Nombre premier ?
     
 def is_prime(n):
     for d in range(2,n):
@@ -8,7 +8,7 @@ def is_prime(n):
             return False
     return True
 
-# 002 Nombres premiers dans un intervalle ?
+#002 Nombres premiers dans un intervalle ?
 
 def is_prime(n):
     for d in range(2,n):
@@ -23,7 +23,7 @@ def get_primes_list(inf, sup):
             primes_list.append(nbr)
     return primes_list
 
-# 003 Nombre Parfait ?
+#003 Nombre Parfait ?
 
 def get_dividers(n):
     dividers_list = []
@@ -219,3 +219,9 @@ def triangulaire(n):
     for i in range(1, n+1):
         total += 1
     return total
+
+#018 Nombre Triangulaire Formule ?
+
+def triangulaire_formule(n):
+    return (n*(n+1))/2
+
