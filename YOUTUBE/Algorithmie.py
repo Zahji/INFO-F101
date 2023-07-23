@@ -233,3 +233,13 @@ def get_dividers(n):
         if n % divider == 0:
             dividers_list.append(divider)
     return dividers_list
+
+#020 Nombre puissance d'un autre Nombre ?
+
+def is_power(n, p):
+    for i in range(1,n):
+        if i**p > n:
+            return False
+        elif i**p == n:
+            return True
+        
