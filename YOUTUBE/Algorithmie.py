@@ -416,3 +416,21 @@ def elements_uniques(liste):
         return True
     else:
         return False
+#038 Mélanger les caractères d'une chaîne de caractères
+
+from random import randint, shuffle
+
+def shuffle_string(string):
+   new_string = ""
+   while(len(string) > 0):
+        random_digit = randint(0, len(string)-1)
+        new_string += string[random_digit]
+        string = string[:random_digit] + string[random_digit+1:]
+   return new_string
+
+def shuffle_string_2(string):
+    liste = list(string)
+    shuffle(liste)
+    return "".join(liste)
+
+
