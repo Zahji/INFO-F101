@@ -323,3 +323,16 @@ from math import factorial
 def binomial(n, k):
     return  factorial(n)/factorial(k)*factorial(n-k)
 
+#028 PGCD ?
+
+def pgcd(x,y):
+    if x < y:
+        x, y = y, x
+    if x % y == 0:
+        return y
+    for k in range(y//2, 0, -1):
+        if x % k == 0 and y % k == 0:
+            return k
+        
+
+    
