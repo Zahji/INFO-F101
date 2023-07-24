@@ -416,4 +416,3 @@ def elements_uniques(liste):
         return True
     else:
         return False
-
