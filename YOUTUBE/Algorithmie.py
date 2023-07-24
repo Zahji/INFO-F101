@@ -335,4 +335,8 @@ def pgcd(x,y):
             return k
         
 
-    
+#029 Moyenne Arithmérique ?
+
+def moyenne_arithmetique(liste):
+    return (1/len(liste)) * sum(liste)
+
