@@ -390,3 +390,30 @@ def concatenate(liste1, liste2):
             new_list.append(element)
     return new_list
 
+#036 Générer une matrice aléatoire
+
+from random import randint
+
+def afficher_matrice(matrice):
+    for line in matrice:
+        print(line)
+
+        
+
+def generer_matrice_aleatoire(M, N, inf=1, sup=100):
+    matrix = []
+    for i in range(M):
+        line = []
+        for j in range(N):
+            line.append(randint(inf, sup))
+        matrix.append(line)
+    return matrix
+
+#037 Vérifier que tous les éléments d'une liste sont différents
+
+def elements_uniques(liste):
+    if len(liste) == len(list(set(liste))):
+        return True
+    else:
+        return False
+
