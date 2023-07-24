@@ -197,7 +197,7 @@ def length(liste):
 #015 Anagrammes ?
 
 def anagrame(word1, word2):
-    if len(word1) != len(word2)
+    if len(word1) != len(word2):
         return False
     if sorted(word1.upper()) == sorted(word2.upper()):
         return True
@@ -380,3 +380,13 @@ def ecart_type(liste):
     for nb in liste:
         var += (nb - moy)**2
     return sqrt(var/len(liste))
+
+#035 Concatener 2 listes ?
+
+def concatenate(liste1, liste2):
+    new_list = list()
+    for liste in [liste1, liste2]:
+        for element in liste:
+            new_list.append(element)
+    return new_list
+
