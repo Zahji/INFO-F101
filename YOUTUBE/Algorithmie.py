@@ -433,4 +433,12 @@ def shuffle_string_2(string):
     shuffle(liste)
     return "".join(liste)
 
+#040 Matrice Nullle
+
+def matrice_nulle(M, N):
+    matrice = []
+    for i in range(M):
+        matrice.append([0 for x in range(N)])
+    return matrice
+
 
