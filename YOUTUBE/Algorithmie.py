@@ -300,3 +300,20 @@ def triangle_pascal(n):
         pascal.append(line)
     return pascal
 
+#026 Polynome second degré ?
+
+from math import *
+def discriminant(a,b,c):
+    return b**2 - 4*a*c
+
+def polynome(a,b,c):
+    delta = discriminant(a,b,c)
+    if delta < 0:
+        return None, None
+    elif delta == 0:
+        return -b / (2*a), None
+    else:
+        x1 = (-b+sqrt(delta))/2*a
+        x2 = (-b-sqrt(delta))/2*a
+        return x1, x2
+    
