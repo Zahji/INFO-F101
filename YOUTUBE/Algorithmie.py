@@ -317,3 +317,9 @@ def polynome(a,b,c):
         x2 = (-b-sqrt(delta))/2*a
         return x1, x2
     
+#027 Coefficient Binomial ?
+
+from math import factorial
+def binomial(n, k):
+    return  factorial(n)/factorial(k)*factorial(n-k)
+
