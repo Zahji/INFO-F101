@@ -372,3 +372,11 @@ def variance(liste):
         var += (nb - moy)**2
     return var / len(liste)
 
+#034 Ecart Type ?
+
+def ecart_type(liste):
+    moy = moyenne(liste)
+    var = 0
+    for nb in liste:
+        var += (nb - moy)**2
+    return sqrt(var/len(liste))
