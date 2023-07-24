@@ -340,3 +340,10 @@ def pgcd(x,y):
 def moyenne_arithmetique(liste):
     return (1/len(liste)) * sum(liste)
 
+#030 Moyenne Harmonique ?
+
+def harmonique(liste):
+    sum_liste = 0
+    for nb in liste:
+        sum_liste += (1/nb)
+    return len(liste) / sum_liste
