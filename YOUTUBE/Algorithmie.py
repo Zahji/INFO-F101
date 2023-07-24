@@ -357,3 +357,9 @@ def quadratique(liste):
         sum_liste += nb**2
     return sqrt(sum_liste/len(liste))
 
+#032 Moyenne ?
+
+from math import *
+def moyenne(liste):
+    return (1/len(liste)) * sum(liste)
+
