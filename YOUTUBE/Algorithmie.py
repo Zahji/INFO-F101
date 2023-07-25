@@ -390,7 +390,7 @@ def concatenate(liste1, liste2):
             new_list.append(element)
     return new_list
 
-#036 Générer une matrice aléatoire
+#036 Générer une matrice aléatoire ?
 
 from random import randint
 
@@ -409,14 +409,14 @@ def generer_matrice_aleatoire(M, N, inf=1, sup=100):
         matrix.append(line)
     return matrix
 
-#037 Vérifier que tous les éléments d'une liste sont différents
+#037 Vérifier que tous les éléments d'une liste sont différents ?
 
 def elements_uniques(liste):
     if len(liste) == len(list(set(liste))):
         return True
     else:
         return False
-#038 Mélanger les caractères d'une chaîne de caractères
+#038 Mélanger les caractères d'une chaîne de caractères ?
 
 from random import randint, shuffle
 
@@ -433,7 +433,7 @@ def shuffle_string_2(string):
     shuffle(liste)
     return "".join(liste)
 
-#040 Matrice Nullle
+#040 Matrice Nullle ?
 
 def matrice_nulle(M, N):
     matrice = []
@@ -441,4 +441,30 @@ def matrice_nulle(M, N):
         matrice.append([0 for x in range(N)])
     return matrice
 
+#041 Produit Scalaire ?
+
+def transpose(matrix):
+    result_matrix = []
+    for col in range(len(matrix[0])):
+        line_matrix = []
+        for line in range(len(matrix)):
+            line_matrix.append(matrix[line][col])
+        result_matrix.append(line_matrix)
+    return result_matrix
+
+
+
+def produit_scalaire(A, B):
+    if len(A[0]) != len(B):
+        return None
+    result_matrix = []
+    for line in A:
+        line_matrix = []
+        for col_B in transpose(B):
+            result = 0
+            for i, a in enumerate(line):
+                result += a * col_B[i]
+            line_matrix.append(result)
+        result_matrix.append(line_matrix)
+    return result_matrix
 
