@@ -468,3 +468,8 @@ def produit_scalaire(A, B):
         result_matrix.append(line_matrix)
     return result_matrix
 
+#042 Inverser les mots d'une Chaine ?
+
+def inverse(string):
+    return " ".join([word[::-1] for word in string.split(" ")])
+
