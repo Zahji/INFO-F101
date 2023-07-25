@@ -17,3 +17,10 @@ def recursion_factorielle(n):
     if n > 2:
         n *= recursion_factorielle(n-1)
     return n
+
+#3
+def recursion_inversion_string(s):
+    new_s = s[-1]
+    if len(s) > 1:
+        new_s += recursion_inversion_string(s[0:-1])
+    return new_s
