@@ -473,3 +473,8 @@ def produit_scalaire(A, B):
 def inverse(string):
     return " ".join([word[::-1] for word in string.split(" ")])
 
+#043 Determinant Matrice 2 ?
+
+def determinant_2(M):
+    return M[0][0] * M[1][1] - M[0][1] * M[1][0]
+
