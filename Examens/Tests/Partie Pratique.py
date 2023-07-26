@@ -38,3 +38,19 @@ class SuperHero:
 
 superman = SuperHero("Superman", "voler")
 superman.utiliser_pouvoir()
+
+# ---------- QUESTION 2 --------- #
+
+def foo(x):
+    return x*x
+
+def resultat_foo(x):
+    while True:
+        try:
+            x = float(input("Entrez une valeur pour x : "))
+            resultat = foo(x)
+            print("Le résultat de foo(x) est :", resultat)
+            break 
+        except KeyboardInterrupt:
+            print
+    
