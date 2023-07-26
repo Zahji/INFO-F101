@@ -488,3 +488,9 @@ def determinant_3(M):
     bdi = M[0][1] * M[1][0] * M[2][2]
     afh = M[0][0] * M[1][2] * M[2][1]
     return aei + bfg + cdh - ceg - bdi - afh
+
+
+# http://www.klubprepa.fr/Site/Document/ChargementExtrait.aspx?IdDocument=8817
+
+#045
+
