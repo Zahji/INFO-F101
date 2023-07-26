@@ -11,9 +11,17 @@ comme une séquence d'instructions qui modifient l'état du programme
 en manipulant des variables.
 
 
-
 2) Programmation Fonctionnelle:
 
 Un paradigme de programmation où les programmes sont conçus 
 pour être basés sur des fonctions pures, évitant les effets de bord 
 et en traitant les calculs comme l'évaluation d'expressions mathématiques.
+
+
+3) Programmation Orienté-Objet:
+
+
+La programmation orientée objet est un paradigme de programmation 
+où les programmes sont conçus autour d'objets qui ont des caractéristiques 
+et des comportements spécifiques, favorisant la réutilisation du code et 
+la modélisation de problèmes de manière naturelle.
