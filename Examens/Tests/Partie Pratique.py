@@ -26,3 +26,15 @@ resultat_magique = doubler_nombres(ma_liste)
 
 print("Résultat magique :", resultat_magique)
 
+# --------- 3) Programmation Orienté Objet --------- 
+
+class SuperHero:
+    def __init__(self, nom, pouvoir):
+        self.nom = nom
+        self.pouvoir = pouvoir
+
+    def utiliser_pouvoir(self):
+        print(self.nom, "utilise son pouvoir", self.pouvoir)
+
+superman = SuperHero("Superman", "voler")
+superman.utiliser_pouvoir()
