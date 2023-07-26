@@ -2,3 +2,14 @@
 
 # ---------- 2012_2013 ---------- #
 
+# ---------- QUESTION 1 --------- #
+
+1) Programmation Impérative:
+
+Dans un paradigme impératif, les instructions sont 
+exécutées de manière séquentielle, 
+c’est-à-dire les unes après les autres dans l’ordre 
+dans lequel elles ont été écrites.
+En programmation impérative, 
+l’ordre d’exécution du code a de l’importance.
+
