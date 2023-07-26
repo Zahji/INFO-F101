@@ -4,14 +4,25 @@
 
 # ---------- QUESTION 1 --------- #
 
-# 1) Programmation Impérative:
 
-# Déclaration de la variable pour stocker la somme
+# ---------- 1) Programmation Impérative -----------
+
 somme = 0
-
-# Boucle pour ajouter les nombres de 1 à 5 à la somme
 for nombre in range(1, 6):
     somme = somme + nombre
+print("Somme (Impératif) :", somme)
 
-# Affichage du résultat
-print("La somme est :", somme)
+
+# --------- 2) Programmation Fonctionnelle --------- 
+
+def doubler_nombres(liste):
+    resultat = []
+    for nombre in liste:
+        resultat.append(nombre * 2)
+    return resultat
+
+ma_liste = [1, 2, 3, 4, 5]
+resultat_magique = doubler_nombres(ma_liste)
+
+print("Résultat magique :", resultat_magique)
+

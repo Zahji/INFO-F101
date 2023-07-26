@@ -17,4 +17,3 @@ en manipulant des variables.
 Un paradigme de programmation où les programmes sont conçus 
 pour être basés sur des fonctions pures, évitant les effets de bord 
 et en traitant les calculs comme l'évaluation d'expressions mathématiques.
-
