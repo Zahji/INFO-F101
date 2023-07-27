@@ -5,3 +5,6 @@ v >= 0
 
 2) La variable v contient une valeur comprise entre 5 et 8 (bornes incluses).
 5 <= v <= 8
+
+3) Si la variable v est positive, alors la variable w est négative ou nulle.
+v > 0 → w <= 0
