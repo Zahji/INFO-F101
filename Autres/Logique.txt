@@ -8,3 +8,6 @@ v >= 0
 
 3) Si la variable v est positive, alors la variable w est négative ou nulle.
 v > 0 → w <= 0
+
+4) Le vecteur V ne contient que des valeurs positives ou nulles.
+∀i · (0 <= i < n) → (V[i] >= 0)
