@@ -11,3 +11,7 @@ v > 0 → w <= 0
 
 4) Le vecteur V ne contient que des valeurs positives ou nulles.
 ∀i · (0 <= i < n) → (V[i] >= 0)
+
+5) Au moins une case du vecteur V contient une valeur supérieure ou égale à 5.
+ ∃i · (0 <= i < n) ∧ (V[i] >= 5)
+
