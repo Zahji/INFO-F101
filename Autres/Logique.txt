@@ -31,5 +31,8 @@ v = E  W[j]
 9) Tous les éléments du vecteur V sont inférieurs ou égaux à max.
 ∀i · (0 <= i < n) → (V[i] <= max)
 
+10) max est la valeur maximale contenue dans le vecteur.
+∃i · (0 <= i < n) ∧ (V[i] = max ∧ (∀j · (0 <= j < n) → (V[j] <= max)))
+
 
 
