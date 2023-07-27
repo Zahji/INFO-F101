@@ -28,5 +28,8 @@ v = E  W[j]
 8) Les i premiers éléments du vecteur V sont inférieurs à 6.
 ∀j · (0 <= j <= i − 1) → (V[j] < 6)
 
+9) Tous les éléments du vecteur V sont inférieurs ou égaux à max.
+∀i · (0 <= i < n) → (V[i] <= max)
+
 
 
