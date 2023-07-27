@@ -1,2 +1,5 @@
 Logique de Premier Ordre Syllabus 2016 INFO_F101
 
+1) La variable v est positive ou nulle
+v > 0
+
