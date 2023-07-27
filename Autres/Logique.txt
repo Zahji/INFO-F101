@@ -20,3 +20,9 @@ v > 0 → w <= 0
 v = E  W[i]
     i=0
 
+7) La variable v contient la somme des i premiers éléments du vecteur W.
+    n-1
+v = E  W[j]
+    j=0
+
+
