@@ -34,5 +34,7 @@ v = E  W[j]
 10) max est la valeur maximale contenue dans le vecteur.
 ∃i · (0 <= i < n) ∧ (V[i] = max ∧ (∀j · (0 <= j < n) → (V[j] <= max)))
 
+11) Le vecteur V contient toutes des valeurs différentes.
+∀i · ∀j · (0 <= i < j < n) → (V[i] =! V[j])
 
 
