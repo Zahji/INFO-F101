@@ -519,3 +519,11 @@ def pair(n):
     else:
         return False
     
+#049
+
+def somme(liste):
+    total = 0
+    for nombre in liste:
+        total += nombre
+    return total
+
