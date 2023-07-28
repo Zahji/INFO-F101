@@ -494,3 +494,8 @@ def determinant_3(M):
 
 #045
 
+s = "Bonjour    tout    le   monde !"
+s = " ".join(s.split())
+print(s)
+
+
