@@ -510,4 +510,12 @@ def elements_uniques(liste):
         return True
     else:
         return False
+
+#048
+
+def pair(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
     
