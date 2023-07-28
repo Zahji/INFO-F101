@@ -13,3 +13,9 @@ def somme(c,a,b,n):
         for j in range(n):
             c[i][j] = a[i][j] + b[j][i]
 O(n²)
+
+3)
+for j in range(4):
+    for i in range(n):
+        t[i] *= t[i]
+O(n)
