@@ -19,3 +19,16 @@ for j in range(4):
     for i in range(n):
         t[i] *= t[i]
 O(n)
+
+4)
+c=0
+i=n * n
+while i > 0:
+    j=n
+    while j > 0:
+        c += 1
+        j = j//4
+    i = i//2
+print c
+O(n^3)
+
