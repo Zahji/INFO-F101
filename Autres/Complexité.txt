@@ -6,3 +6,10 @@ while i<n:
     t[i] = 0
     i += 3
 O(n)
+
+2)
+def somme(c,a,b,n):
+    for i in range(n):
+        for j in range(n):
+            c[i][j] = a[i][j] + b[j][i]
+O(n²)
