@@ -498,4 +498,8 @@ s = "Bonjour    tout    le   monde !"
 s = " ".join(s.split())
 print(s)
 
+#046
+
+def sum_dict(dictionnaire):
+    return sum(dictionnaire.values())
 
