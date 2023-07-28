@@ -503,3 +503,11 @@ print(s)
 def sum_dict(dictionnaire):
     return sum(dictionnaire.values())
 
+#047
+
+def elements_uniques(liste):
+    if len(liste) == len(list(set(liste))):
+        return True
+    else:
+        return False
+    
