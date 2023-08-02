@@ -45,3 +45,12 @@ class Personne:
     def presentation(self):
         return f"Je m'appelle {self.prenom} {self.nom} et j'ai {self.age} ans."
 
+# Exo 5 :
+
+class Chien:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+    
+    def aboyer(self):
+        print(f"Woof! Je m'appelle {self.nom}.")
