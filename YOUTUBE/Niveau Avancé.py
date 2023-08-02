@@ -23,3 +23,14 @@ class Rectangle:
     def aire(self):
         return self.longueur * self.largeur
     
+# Exo 3 :
+
+import math
+
+class Cercle:
+    def __init__(self, rayon):
+        self.rayon = rayon
+    
+    def aire(self):
+        return math.pi * self.rayon ** 2
+    
