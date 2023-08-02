@@ -83,3 +83,31 @@ class Bouteille:
 bouteille1 = Bouteille(1.5, "eau")
 bouteille1.boire(0.5)
 bouteille1.boire(1.0)
+
+# Exo 8 :
+class Banque:
+    def __init__(self, titulaire, solde, numero_compte):
+        self.titulaire = titulaire
+        self.solde = solde
+        self.numero_compte = numero_compte
+    
+    def deposer(self, montant):
+        self.solde += montant
+        print(f"Montant de {montant}€ déposé. Solde actuel: {self.solde}€")
+    
+    def retirer(self, montant):
+        if montant <= self.solde:
+            self.solde -= montant
+            print(f"Montant de {montant}€ retiré. Solde actuel: {self.solde}€")
+        else:
+            print("Solde insuffisant.")
+    
+    def afficher_solde(self):
+        print(f"Solde actuel du compte {self.numero_compte}: {self.solde}€")
+
+compte1 = Banque("Alice", 1000, "123456")
+compte1.deposer(500)
+compte1.retirer(200)
+compte1.afficher_solde()
+
+
