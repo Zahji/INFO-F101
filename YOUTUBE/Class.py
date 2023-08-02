@@ -132,3 +132,11 @@ point1.deplacer_horizontal(5)
 point1.deplacer_vertical(-2)
 point1.afficher_coordonnees()
 
+
+# Exo 10 :
+
+# Exo 11 :
+
+# Exo 12 :
+
+# Exo 13 :
