@@ -65,3 +65,21 @@ class Livre:
     
     def informations(self):
         return f"Titre: {self.titre}, Auteur: {self.auteur}, Année: {self.annee}"
+
+# Exo 7 :
+
+class Bouteille:
+    def __init__(self, contenance, liquide):
+        self.contenance = contenance
+        self.liquide = liquide
+    
+    def boire(self, quantite):
+        if quantite <= self.contenance:
+            self.contenance -= quantite
+            print(f"Vous avez bu {quantite} litres de {self.liquide}. Il reste {self.contenance} litres.")
+        else:
+            print("La bouteille ne contient pas autant de liquide.")
+
+bouteille1 = Bouteille(1.5, "eau")
+bouteille1.boire(0.5)
+bouteille1.boire(1.0)
