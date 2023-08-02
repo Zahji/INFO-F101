@@ -54,3 +54,14 @@ class Chien:
     
     def aboyer(self):
         print(f"Woof! Je m'appelle {self.nom}.")
+
+# Exo 6 :
+
+class Livre:
+    def __init__(self, titre, auteur, annee):
+        self.titre = titre
+        self.auteur = auteur
+        self.annee = annee
+    
+    def informations(self):
+        return f"Titre: {self.titre}, Auteur: {self.auteur}, Année: {self.annee}"
