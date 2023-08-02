@@ -111,3 +111,24 @@ compte1.retirer(200)
 compte1.afficher_solde()
 
 
+# Exo 9 :
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    def deplacer_horizontal(self, distance):
+        self.x += distance
+    
+    def deplacer_vertical(self, distance):
+        self.y += distance
+    
+    def afficher_coordonnees(self):
+        print(f"Coordonnées du point: ({self.x}, {self.y})")
+
+point1 = Point(2, 3)
+point1.deplacer_horizontal(5)
+point1.deplacer_vertical(-2)
+point1.afficher_coordonnees()
+
