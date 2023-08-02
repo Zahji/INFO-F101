@@ -1,3 +1,14 @@
 # Les Exercices suivant sont d'un niveau plus avancés :
 
-# Lien 1 : http://igm.univ-mlv.fr/~pivoteau/PYTHON/python_tp12.pdf
+# Premier Lien : 
+
+# Exos 1 :
+
+def nbCheminsDist(dist):
+    if dist == 0:
+        return 1
+ 
+    if dist < 0:
+        return 0
+ 
+    return nbCheminsDist(dist-1)+nbCheminsDist(dist-2)+nbCheminsDist(dist-3)
