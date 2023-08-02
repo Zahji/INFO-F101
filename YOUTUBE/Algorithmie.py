@@ -595,3 +595,16 @@ for d in items:
     value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
 
 print(','.join(value))
+
+#056
+
+lines = []
+while True:
+    s = input()
+    if s:
+        lines.append(s.upper())
+    else:
+        break;
+
+for sentence in lines:
+    print(sentence)
