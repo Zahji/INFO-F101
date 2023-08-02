@@ -34,3 +34,14 @@ class Cercle:
     def aire(self):
         return math.pi * self.rayon ** 2
     
+# Exo 4 :
+
+class Personne:
+    def __init__(self, nom, prenom, age):
+        self.nom = nom
+        self.prenom = prenom
+        self.age = age
+    
+    def presentation(self):
+        return f"Je m'appelle {self.prenom} {self.nom} et j'ai {self.age} ans."
+
