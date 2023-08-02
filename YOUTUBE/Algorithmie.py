@@ -608,3 +608,9 @@ while True:
 
 for sentence in lines:
     print(sentence)
+
+#057
+
+values = input()
+numbers = [x for x in values.split(",") if int(x)%2!=0]
+print(",".join(numbers))
