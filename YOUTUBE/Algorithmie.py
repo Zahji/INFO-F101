@@ -811,6 +811,31 @@ class Rectangle:
 
 #073
 
+class Cours:
+    def __init__(self, nom, enseignant, capacite):
+        self.nom = nom
+        self.enseignant = enseignant
+        self.capacite = capacite
+        self.etudiants_inscrits = []
+    
+    def ajouter_etudiant(self, etudiant):
+        if len(self.etudiants_inscrits) < self.capacite:
+            self.etudiants_inscrits.append(etudiant)
+            print(f"{etudiant} a été inscrit au cours {self.nom}.")
+        else:
+            print(f"Le cours {self.nom} est complet.")
+    
+    def retirer_etudiant(self, etudiant):
+        if etudiant in self.etudiants_inscrits:
+            self.etudiants_inscrits.remove(etudiant)
+            print(f"{etudiant} a été retiré du cours {self.nom}.")
+        else:
+            print(f"{etudiant} n'est pas inscrit au cours {self.nom}.")
+    
+    def afficher_etudiants(self):
+        print(f"Étudiants inscrits au cours {self.nom}: {', '.join(self.etudiants_inscrits)}")
+
+
 #074
 
 #075
