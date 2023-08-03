@@ -662,6 +662,14 @@ printDict()
 
 #061
 
+def printList():
+	li=list()
+	for i in range(1,21):
+		li.append(i**2)
+	print(li)
+
+printList()
+
 #062
 
 #063
