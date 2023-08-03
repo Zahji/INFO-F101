@@ -848,6 +848,30 @@ class Livre:
 
 #075
 
+class Bibliotheque:
+    def __init__(self):
+        self.collection = []
+    
+    def ajouter_livre(self, livre):
+        self.collection.append(livre)
+    
+    def emprunter_livre(self, titre):
+        for livre in self.collection:
+            if livre.titre == titre and livre.disponible:
+                livre.disponible = False
+                print(f"{livre.titre} a été emprunté.")
+                return
+        print(f"{titre} n'est pas disponible.")
+    
+    def retourner_livre(self, titre):
+        for livre in self.collection:
+            if livre.titre == titre and not livre.disponible:
+                livre.disponible = True
+                print(f"{livre.titre} a été retourné.")
+                return
+        print(f"{titre} ne peut pas être retourné.")
+
+
 #076
 
 #077
