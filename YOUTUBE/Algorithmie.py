@@ -730,6 +730,16 @@ class Chien:
 
 #067
 
+class Livre:
+    def __init__(self, titre, auteur, annee):
+        self.titre = titre
+        self.auteur = auteur
+        self.annee = annee
+    
+    def informations(self):
+        return f"Titre: {self.titre}, Auteur: {self.auteur}, Année: {self.annee}"
+
+
 #068
 
 #069
