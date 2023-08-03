@@ -772,6 +772,26 @@ class Employe:
 
 #071
 
+class Banque:
+    compteur_comptes = 0
+    
+    def __init__(self, titulaire, solde_initial):
+        Banque.compteur_comptes += 1
+        self.numero_compte = Banque.compteur_comptes
+        self.titulaire = titulaire
+        self.solde = solde_initial
+    
+    def deposer(self, montant):
+        self.solde += montant
+        print(f"Montant de {montant}€ déposé. Nouveau solde: {self.solde}€")
+    
+    def retirer(self, montant):
+        if montant <= self.solde:
+            self.solde -= montant
+            print(f"Montant de {montant}€ retiré. Nouveau solde: {self.solde}€")
+        else:
+            print("Solde insuffisant.")
+
 #072
 
 #073
