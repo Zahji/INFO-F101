@@ -874,4 +874,22 @@ class Bibliotheque:
 
 #076
 
-#077
+class Vehicule:
+    def __init__(self, modele, marque, annee):
+        self.modele = modele
+        self.marque = marque
+        self.annee = annee
+        self.vitesse = 0
+    
+    def accelerer(self, increment):
+        self.vitesse += increment
+        print(f"Le véhicule accélère de {increment} km/h. Vitesse actuelle: {self.vitesse} km/h.")
+    
+    def decelerer(self, decrement):
+        self.vitesse -= decrement
+        print(f"Le véhicule décélère de {decrement} km/h. Vitesse actuelle: {self.vitesse} km/h.")
+    
+    def afficher_vitesse(self):
+        print(f"Vitesse actuelle du véhicule: {self.vitesse} km/h.")
+
+
