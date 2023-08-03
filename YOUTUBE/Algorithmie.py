@@ -794,6 +794,21 @@ class Banque:
 
 #072
 
+class Rectangle:
+    def __init__(self, longueur, largeur):
+        self.longueur = longueur
+        self.largeur = largeur
+    
+    def perimetre(self):
+        return 2 * (self.longueur + self.largeur)
+    
+    def aire(self):
+        return self.longueur * self.largeur
+    
+    def est_carre(self):
+        return self.longueur == self.largeur
+
+
 #073
 
 #074
