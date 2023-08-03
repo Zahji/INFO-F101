@@ -636,3 +636,52 @@ while True:
         pos[1]+=steps
     else:
         pass
+
+#059
+class Person:
+    name = "Person"  
+    def __init__(self, name = None):
+        self.name = name
+
+jeffrey = Person("Jeffrey")
+print("%s name is %s" % (Person.name, jeffrey.name))
+
+nico = Person()
+nico.name = "Nico"
+print("%s name is %s" % (Person.name, nico.name))
+
+#060
+
+#061
+
+#062
+
+#063
+
+#064
+
+#065
+
+#066
+
+#067
+
+#068
+
+#069
+
+#070
+
+#071
+
+#072
+
+#073
+
+#074
+
+#075
+
+#076
+
+#077
