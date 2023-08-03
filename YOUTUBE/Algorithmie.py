@@ -760,6 +760,16 @@ class Fraction :
 
 #070
 
+class Employe:
+    def __init__(self, nom, salaire_mensuel, augmentation):
+        self.nom = nom
+        self.salaire_mensuel = salaire_mensuel
+        self.augmentation = augmentation
+    
+    def augmenter_salaire(self):
+        augmentation_en_montant = self.salaire_mensuel * (self.augmentation / 100)
+        self.salaire_mensuel += augmentation_en_montant
+
 #071
 
 #072
