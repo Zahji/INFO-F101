@@ -752,6 +752,12 @@ print(f(n))
 
 #069
 
+class Fraction :
+
+    def __init__(self,a,b):
+        self.num = a
+        self.den = b
+
 #070
 
 #071
