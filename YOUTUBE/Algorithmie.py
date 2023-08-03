@@ -892,4 +892,22 @@ class Vehicule:
     def afficher_vitesse(self):
         print(f"Vitesse actuelle du véhicule: {self.vitesse} km/h.")
 
+#077
+
+class CompteBancaire:
+    def __init__(self, solde_initial):
+        self.solde = solde_initial
+    
+    def deposer(self, montant):
+        self.solde += montant
+    
+    def retirer(self, montant):
+        if montant <= self.solde:
+            self.solde -= montant
+        else:
+            print("Fonds insuffisants.")
+    
+    def __str__(self):
+        return f"Solde du compte: {self.solde} €"
+
 
