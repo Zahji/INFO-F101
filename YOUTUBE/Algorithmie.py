@@ -838,6 +838,14 @@ class Cours:
 
 #074
 
+class Livre:
+    def __init__(self, titre, auteur, annee):
+        self.titre = titre
+        self.auteur = auteur
+        self.annee = annee
+        self.disponible = True
+
+
 #075
 
 #076
