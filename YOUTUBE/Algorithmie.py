@@ -720,6 +720,14 @@ def nbCheminsDist(dist):
 
 #066
 
+class Chien:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+    
+    def aboyer(self):
+        print(f"Woof! Je m'appelle {self.nom}.")
+
 #067
 
 #068
