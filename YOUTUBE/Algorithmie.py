@@ -1224,7 +1224,29 @@ class Zoo:
 
 #093
 
+class Article:
+    def __init__(self, nom, prix, quantite):
+        self.nom = nom
+        self.prix = prix
+        self.quantite = quantite
 
+class Facture:
+    def __init__(self):
+        self.articles = []
+    
+    def ajouter_article(self, article):
+        self.articles.append(article)
+    
+    def calculer_montant_total(self):
+        montant_total = sum(article.prix * article.quantite for article in self.articles)
+        return montant_total
+    
+    def afficher_facture(self):
+        for article in self.articles:
+            total_article = article.prix * article.quantite
+            print(f"{article.nom} - {article.quantite} x {article.prix} € = {total_article} €")
+        montant_total = self.calculer_montant_total()
+        print(f"Montant total: {montant_total
 
 #094
 
