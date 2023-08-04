@@ -957,3 +957,25 @@ class Point3D:
         self.z += dz
 
 #080
+
+class Etudiant:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+        self.notes = []
+    
+    def ajouter_note(self, note):
+        self.notes.append(note)
+    
+    def moyenne_notes(self):
+        if self.notes:
+            return sum(self.notes) / len(self.notes)
+        return 0
+    
+    def afficher_informations(self):
+        print(f"Étudiant: {self.nom}, Âge: {self.age}")
+        if self.notes:
+            print("Notes:", ', '.join(map(str, self.notes)))
+            print("Moyenne des notes:", self.moyenne_notes())
+        else:
+            print("Aucune note enregistrée.")
