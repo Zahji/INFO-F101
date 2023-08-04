@@ -1246,10 +1246,26 @@ class Facture:
             total_article = article.prix * article.quantite
             print(f"{article.nom} - {article.quantite} x {article.prix} € = {total_article} €")
         montant_total = self.calculer_montant_total()
-        print(f"Montant total: {montant_total
+        print(f"Montant total: {montant_total} €")
 
 #094
 
-
+class CompteEpargne:
+    def __init__(self, solde_initial, taux_interet):
+        self.solde = solde_initial
+        self.taux_interet = taux_interet
+    
+    def deposer(self, montant):
+        self.solde += montant
+    
+    def retirer(self, montant):
+        if montant <= self.solde:
+            self.solde -= montant
+        else:
+            print("Fonds insuffisants.")
+    
+    def calculer_interet(self, mois):
+        interet = (self.solde * self.taux_interet / 100) * mois / 12
+        return interet
 
 #095
