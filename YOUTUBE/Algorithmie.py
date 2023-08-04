@@ -1002,3 +1002,28 @@ class LivreEmpruntable(Produit):
             print(f"{self.nom} a été retourné.")
         else:
             print(f"{self.nom} n'a pas été emprunté.")
+
+
+#082
+
+class Calculatrice:
+    def __init__(self):
+        self.memoire = 0
+    
+    def addition(self, nombre):
+        self.memoire += nombre
+    
+    def soustraction(self, nombre):
+        self.memoire -= nombre
+    
+    def multiplication(self, nombre):
+        self.memoire *= nombre
+    
+    def division(self, nombre):
+        if nombre != 0:
+            self.memoire /= nombre
+        else:
+            print("Division par zéro.")
+    
+    def effacer_memoire(self):
+        self.memoire = 0
