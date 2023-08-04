@@ -1118,6 +1118,23 @@ class Agenda:
 
 #088
 
+class Bouteille:
+    def __init__(self, nom, contenance):
+        self.nom = nom
+        self.contenance = contenance
+        self.niveau = 0
+    
+    def verser(self, volume):
+        if volume <= self.niveau:
+            self.niveau -= volume
+        else:
+            print("Niveau insuffisant.")
+    
+    def remplir(self):
+        self.niveau = self.contenance
+    
+    def afficher_niveau(self):
+        print(f"Niveau de {self.nom}: {self.niveau} ml")
 
 
 #089
