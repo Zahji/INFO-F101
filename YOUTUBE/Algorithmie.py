@@ -1269,3 +1269,27 @@ class CompteEpargne:
         return interet
 
 #095
+
+class Propriete:
+    def __init__(self, adresse, prix, description):
+        self.adresse = adresse
+        self.prix = prix
+        self.description = description
+
+class AgenceImmobilier:
+    def __init__(self):
+        self.proprietes = []
+    
+    def ajouter_propriete(self, propriete):
+        self.proprietes.append(propriete)
+    
+    def afficher_proprietes(self):
+        for propriete in self.proprietes:
+            print(f"{propriete.adresse} - {propriete.prix} €")
+    
+    def rechercher_par_prix_max(self, prix_max):
+        resultats = []
+        for propriete in self.proprietes:
+            if propriete.prix <= prix_max:
+                resultats.append(propriete)
+        return resultats
