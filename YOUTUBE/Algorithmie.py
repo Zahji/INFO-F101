@@ -1077,6 +1077,18 @@ class Cercle(Forme):
 
 #086
 
+class ChaineCaracteres:
+    def __init__(self, chaine):
+        self.chaine = chaine
+    
+    def inverser(self):
+        return self.chaine[::-1]
+    
+    def compter_caracteres(self):
+        return len(self.chaine)
+    
+    def est_palindrome(self):
+        return self.chaine == self.chaine[::-1]
 
 
 #087
