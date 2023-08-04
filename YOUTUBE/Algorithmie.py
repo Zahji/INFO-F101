@@ -912,3 +912,48 @@ class CompteBancaire:
 
 #078
 
+class Produit:
+    def __init__(self, nom, prix, quantite):
+        self.nom = nom
+        self.prix = prix
+        self.quantite = quantite
+
+class Catalogue:
+    def __init__(self):
+        self.produits = []
+    
+    def ajouter_produit(self, produit):
+        self.produits.append(produit)
+    
+    def afficher_produits(self):
+        for produit in self.produits:
+            print(f"Produit: {produit.nom}, Prix: {produit.prix}€, Quantité: {produit.quantite}")
+    
+    def mettre_a_jour_stock(self, nom_produit, nouvelle_quantite):
+        for produit in self.produits:
+            if produit.nom == nom_produit:
+                produit.quantite = nouvelle_quantite
+                print(f"Quantité de {produit.nom} mise à jour: {produit.quantite}")
+
+#079
+
+import math
+
+class Point3D:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+    
+    def distance(self, autre_point):
+        dx = self.x - autre_point.x
+        dy = self.y - autre_point.y
+        dz = self.z - autre_point.z
+        return math.sqrt(dx**2 + dy**2 + dz**2)
+    
+    def translation(self, dx, dy, dz):
+        self.x += dx
+        self.y += dy
+        self.z += dz
+
+#080
