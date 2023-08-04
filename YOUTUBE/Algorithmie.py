@@ -1065,7 +1065,15 @@ class Forme:
 
 #085
 
-
+class Cercle(Forme):
+    def __init__(self, rayon):
+        self.rayon = rayon
+    
+    def calculer_aire(self):
+        return math.pi * self.rayon**2
+    
+    def calculer_perimetre(self):
+        return 2 * math.pi * self.rayon
 
 #086
 
