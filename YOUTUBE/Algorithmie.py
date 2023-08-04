@@ -1139,7 +1139,24 @@ class Bouteille:
 
 #089
 
+import random
 
+class JeuDeCartes:
+    def __init__(self):
+        symboles = ['Cœur', 'Carreau', 'Trèfle', 'Pique']
+        valeurs = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Valet', 'Dame', 'Roi', 'As']
+        self.cartes = [f"{valeur} de {symbole}" for symbole in symboles for valeur in valeurs]
+    
+    def melanger(self):
+        random.shuffle(self.cartes)
+    
+    def piocher(self):
+        if self.cartes:
+            return self.cartes.pop()
+        return "Aucune carte restante."
+    
+    def nombre_cartes_restantes(self):
+        return len(self.cartes)
 
 #090
 
