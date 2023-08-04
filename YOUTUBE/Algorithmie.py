@@ -1027,3 +1027,27 @@ class Calculatrice:
     
     def effacer_memoire(self):
         self.memoire = 0
+
+#083
+
+class Voyage:
+    def __init__(self, destination, cout_total):
+        self.destination = destination
+        self.cout_total = cout_total
+        self.participants = []
+    
+    def ajouter_participant(self, participant):
+        self.participants.append(participant)
+    
+    def calculer_participation(self):
+        if self.participants:
+            part_individuelle = self.cout_total / len(self.participants)
+            return part_individuelle
+        return 0
+    
+    def afficher_informations(self):
+        print(f"Voyage à {self.destination}")
+        print("Coût total:", self.cout_total)
+        for participant in self.participants:
+            print(f"- {participant}")
+        print("Participation individuelle:", self.calculer_participation())
