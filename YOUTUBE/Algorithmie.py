@@ -1051,3 +1051,57 @@ class Voyage:
         for participant in self.participants:
             print(f"- {participant}")
         print("Participation individuelle:", self.calculer_participation())
+
+#084
+
+import math
+
+class Forme:
+    def calculer_aire(self):
+        pass
+    
+    def calculer_perimetre(self):
+        pass
+
+#085
+
+
+
+#086
+
+
+
+#087
+
+
+
+#088
+
+
+
+#089
+
+
+
+#090
+
+
+
+#091
+
+
+
+
+#092
+
+
+
+#093
+
+
+
+#094
+
+
+
+#095
