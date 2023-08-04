@@ -1160,6 +1160,19 @@ class JeuDeCartes:
 
 #090
 
+class PostIt:
+    def __init__(self, titre, contenu, couleur):
+        self.titre = titre
+        self.contenu = contenu
+        self.couleur = couleur
+    
+    def afficher(self):
+        print(f"--- {self.titre} ---")
+        print(self.contenu)
+        print(f"Couleur: {self.couleur}")
+
+    def changer_couleur(self, nouvelle_couleur):
+        self.couleur = nouvelle_couleur
 
 
 #091
