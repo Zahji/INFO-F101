@@ -1177,8 +1177,26 @@ class PostIt:
 
 #091
 
+import datetime
 
-
+class ReservationHotel:
+    def __init__(self, nom, arrivee, depart, personnes, tarif_journalier):
+        self.nom = nom
+        self.arrivee = arrivee
+        self.depart = depart
+        self.personnes = personnes
+        self.tarif_journalier = tarif_journalier
+    
+    def afficher_details(self):
+        print(f"Réservation pour {self.personnes} personnes:")
+        print(f"Nom: {self.nom}")
+        print(f"Arrivée: {self.arrivee.strftime('%d/%m/%Y')}")
+        print(f"Départ: {self.depart.strftime('%d/%m/%Y')}")
+    
+    def calculer_cout_total(self):
+        duree_sejour = (self.depart - self.arrivee).days
+        cout_total = duree_sejour * self.tarif_journalier
+        return cout_total
 
 #092
 
