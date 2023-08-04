@@ -1200,7 +1200,27 @@ class ReservationHotel:
 
 #092
 
+class Animal:
+    def __init__(self, nom, espece, age):
+        self.nom = nom
+        self.espece = espece
+        self.age = age
 
+class Zoo:
+    def __init__(self):
+        self.animaux = []
+    
+    def ajouter_animal(self, animal):
+        self.animaux.append(animal)
+    
+    def afficher_animaux(self):
+        for animal in self.animaux:
+            print(f"{animal.nom} - {animal.espece} ({animal.age} ans)")
+    
+    def afficher_animaux_espece(self, espece):
+        for animal in self.animaux:
+            if animal.espece == espece:
+                print(f"{animal.nom} - {animal.espece} ({animal.age} ans)")
 
 #093
 
