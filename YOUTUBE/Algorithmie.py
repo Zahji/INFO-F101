@@ -1093,6 +1093,27 @@ class ChaineCaracteres:
 
 #087
 
+class Evenement:
+    def __init__(self, nom, date, heure):
+        self.nom = nom
+        self.date = date
+        self.heure = heure
+
+class Agenda:
+    def __init__(self):
+        self.evenements = []
+    
+    def ajouter_evenement(self, evenement):
+        self.evenements.append(evenement)
+    
+    def afficher_evenements(self):
+        for evenement in self.evenements:
+            print(f"{evenement.nom} - {evenement.date} à {evenement.heure}")
+    
+    def afficher_evenements_date(self, date):
+        for evenement in self.evenements:
+            if evenement.date == date:
+                print(f"{evenement.nom} à {evenement.heure}")
 
 
 #088
