@@ -979,3 +979,26 @@ class Etudiant:
             print("Moyenne des notes:", self.moyenne_notes())
         else:
             print("Aucune note enregistrée.")
+
+#081
+
+class LivreEmpruntable(Produit):
+    def __init__(self, nom, prix, quantite):
+        super().__init__(nom, prix, quantite)
+        self.emprunteur = None
+    
+    def emprunter(self, personne):
+        if self.emprunteur is None:
+            self.emprunteur = personne
+            self.quantite -= 1
+            print(f"{self.nom} a été emprunté par {personne}.")
+        else:
+            print(f"{self.nom} est déjà emprunté par {self.emprunteur}.")
+    
+    def retourner(self):
+        if self.emprunteur:
+            self.emprunteur = None
+            self.quantite += 1
+            print(f"{self.nom} a été retourné.")
+        else:
+            print(f"{self.nom} n'a pas été emprunté.")
