@@ -1433,6 +1433,14 @@ def compter_voyelles(chaine):
 
 #108
 
+def tri_insertion(liste):
+    for i in range(1, len(liste)):
+        element = liste[i]
+        j = i - 1
+        while j >= 0 and element < liste[j]:
+            liste[j + 1] = liste[j]
+            j -= 1
+        liste[j + 1] = element
 
 
 #109
