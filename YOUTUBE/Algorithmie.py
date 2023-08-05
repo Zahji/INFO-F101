@@ -1445,6 +1445,12 @@ def tri_insertion(liste):
 
 #109
 
+def sous_liste_maximale(liste):
+    max_global = max_local = liste[0]
+    for nombre in liste[1:]:
+        max_local = max(nombre, max_local + nombre)
+        max_global = max(max_global, max_local)
+    return max_global
 
 #110
 
