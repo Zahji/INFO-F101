@@ -1344,6 +1344,16 @@ def pgcd(a, b):
 
 #099
 
+def facteurs_premiers(nombre):
+    facteurs = []
+    diviseur = 2
+    while diviseur <= nombre:
+        if nombre % diviseur == 0:
+            facteurs.append(diviseur)
+            nombre //= diviseur
+        else:
+            diviseur += 1
+    return facteurs
 
 
 #100
