@@ -1336,6 +1336,10 @@ def liste_nombres_premiers(n):
 
 #098
 
+def pgcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
 
 #099
