@@ -1394,6 +1394,11 @@ def est_palindrome_phrase(phrase):
 
 #104
 
+def table_multiplication(nombre, multiplicateur):
+    for i in range(1, multiplicateur + 1):
+        produit = nombre * i
+        print(f"{nombre} x {i} = {produit}")
+
 
 #105
 
