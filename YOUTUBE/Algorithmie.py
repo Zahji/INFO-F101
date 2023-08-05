@@ -1294,3 +1294,86 @@ class AgenceImmobilier:
                 resultats.append(propriete)
         return resultats
 #096
+
+def tri_fusion(liste):
+    if len(liste) <= 1:
+        return liste
+    milieu = len(liste) // 2
+    gauche = tri_fusion(liste[:milieu])
+    droite = tri_fusion(liste[milieu:])
+    return fusionner(gauche, droite)
+
+def fusionner(gauche, droite):
+    resultat = []
+    i, j = 0, 0
+    while i < len(gauche) and j < len(droite):
+        if gauche[i] < droite[j]:
+            resultat.append(gauche[i])
+            i += 1
+        else:
+            resultat.append(droite[j])
+            j += 1
+    resultat.extend(gauche[i:])
+    resultat.extend(droite[j:])
+    return resultat
+
+#097
+
+def est_premier(nombre):
+    if nombre <= 1:
+        return False
+    for i in range(2, int(nombre ** 0.5) + 1):
+        if nombre % i == 0:
+            return False
+    return True
+
+def liste_nombres_premiers(n):
+    nombres_premiers = []
+    for i in range(2, n):
+        if est_premier(i):
+            nombres_premiers.append(i)
+    return nombres_premiers
+
+#098
+
+
+
+#099
+
+
+#100
+
+
+#101
+
+
+#102
+
+
+#103
+
+
+#104
+
+
+#105
+
+
+#106
+
+
+#107
+
+
+#108
+
+
+
+#109
+
+
+#110
+
+
+#111
+
