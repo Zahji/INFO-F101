@@ -1388,6 +1388,9 @@ def produit_scalaire(vecteur1, vecteur2):
 
 #103
 
+def est_palindrome_phrase(phrase):
+    phrase = phrase.replace(" ", "").lower()
+    return phrase == phrase[::-1]
 
 #104
 
