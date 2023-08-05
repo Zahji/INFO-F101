@@ -1380,6 +1380,11 @@ def nombre_plus_frequent(liste):
 
 #102
 
+def produit_scalaire(vecteur1, vecteur2):
+    if len(vecteur1) != len(vecteur2):
+        return None
+    produit = sum(x * y for x, y in zip(vecteur1, vecteur2))
+    return produit
 
 #103
 
