@@ -1368,6 +1368,15 @@ def somme_chiffres(nombre):
 
 #101
 
+def nombre_plus_frequent(liste):
+    compteurs = {}
+    for nombre in liste:
+        if nombre in compteurs:
+            compteurs[nombre] += 1
+        else:
+            compteurs[nombre] = 1
+    nombre_plus_frequent = max(compteurs, key=compteurs.get)
+    return nombre_plus_frequent
 
 #102
 
