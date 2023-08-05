@@ -1412,6 +1412,14 @@ def tri_bulles(liste):
 
 #106
 
+def decimal_vers_binaire(nombre):
+    binaire = ''
+    while nombre > 0:
+        reste = nombre % 2
+        binaire = str(reste) + binaire
+        nombre //= 2
+    return binaire
+
 
 #107
 
