@@ -1293,3 +1293,4 @@ class AgenceImmobilier:
             if propriete.prix <= prix_max:
                 resultats.append(propriete)
         return resultats
+#096
