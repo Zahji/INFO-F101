@@ -1454,6 +1454,15 @@ def sous_liste_maximale(liste):
 
 #110
 
+def tri_rapide(liste):
+    if len(liste) <= 1:
+        return liste
+    pivot = liste[len(liste) // 2]
+    gauche = [x for x in liste if x < pivot]
+    milieu = [x for x in liste if x == pivot]
+    droite = [x for x in liste if x > pivot]
+    return tri_rapide(gauche) + milieu + tri_rapide(droite)
+
 
 #111
 
