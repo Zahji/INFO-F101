@@ -1358,6 +1358,13 @@ def facteurs_premiers(nombre):
 
 #100
 
+def somme_chiffres(nombre):
+    somme = 0
+    while nombre > 0:
+        somme += nombre % 10
+        nombre //= 10
+    return somme
+
 
 #101
 
