@@ -1423,6 +1423,13 @@ def decimal_vers_binaire(nombre):
 
 #107
 
+def compter_voyelles(chaine):
+    voyelles = "aeiouAEIOU"
+    compteur = 0
+    for caractere in chaine:
+        if caractere in voyelles:
+            compteur += 1
+    return compteur
 
 #108
 
