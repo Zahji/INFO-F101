@@ -1593,6 +1593,17 @@ def fusion_compte_inversions(gauche, droite):
 
 #122
 
+def tri_compte_inversions(liste):
+    if len(liste) <= 1:
+        return liste, 0
+    
+    milieu = len(liste) // 2
+    gauche, inversions_gauche = tri_compte_inversions(liste[:milieu])
+    droite, inversions_droite = tri_compte_inversions(liste[milieu:])
+    fusionnee, inversions_fusion = fusion_compte_inversions(gauche, droite)
+    
+    inversions_total = inversions_gauche + inversions_droite + inversions_fusion
+    return fusionnee, inversions_total
 
 
 #123
