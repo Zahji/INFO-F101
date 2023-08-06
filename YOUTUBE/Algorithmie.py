@@ -1466,3 +1466,93 @@ def tri_rapide(liste):
 
 #111
 
+def tri_fusion(liste):
+    if len(liste) <= 1:
+        return liste
+    
+    milieu = len(liste) // 2
+    gauche = liste[:milieu]
+    droite = liste[milieu:]
+    
+    gauche = tri_fusion(gauche)
+    droite = tri_fusion(droite)
+    
+    return fusionner(gauche, droite)
+
+#112
+
+
+
+#113
+
+
+
+#114
+   
+
+
+#115
+
+
+
+#116
+
+
+
+#117
+
+
+
+#118
+
+
+
+#119
+
+
+
+#120
+
+
+
+#121
+
+
+
+#122
+
+
+
+#123
+
+
+
+#124
+
+
+
+#125
+
+
+
+#126
+
+
+
+#127
+
+
+
+#128
+
+
+
+#129
+
+
+
+#130
+
+
+
+
