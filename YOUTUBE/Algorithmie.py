@@ -1481,7 +1481,22 @@ def tri_fusion(liste):
 
 #112
 
-
+def fusionner(gauche, droite):
+    resultat = []
+    i = j = 0
+    
+    while i < len(gauche) and j < len(droite):
+        if gauche[i] < droite[j]:
+            resultat.append(gauche[i])
+            i += 1
+        else:
+            resultat.append(droite[j])
+            j += 1
+    
+    resultat.extend(gauche[i:])
+    resultat.extend(droite[j:])
+    
+    return resultat
 
 #113
 
