@@ -1510,6 +1510,9 @@ def sous_sequence_maximale(liste):
 
 #114
    
+def est_palindrome(chaine):
+    chaine = chaine.lower().replace(" ", "")
+    return chaine == chaine[::-1]
 
 
 #115
