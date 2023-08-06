@@ -1629,6 +1629,20 @@ def somme_chiffres(nombre):
 
 #125
 
+def est_carre_magique(matrice):
+    n = len(matrice)
+    somme_diagonale1 = sum(matrice[i][i] for i in range(n))
+    somme_diagonale2 = sum(matrice[i][n - 1 - i] for i in range(n))
+    if somme_diagonale1 != somme_diagonale2:
+        return False
+    
+    for i in range(n):
+        somme_ligne = sum(matrice[i])
+        somme_colonne = sum(matrice[j][i] for j in range(n))
+        if somme_ligne != somme_diagonale1 or somme_colonne != somme_diagonale1:
+            return False
+    
+    return True
 
 
 #126
