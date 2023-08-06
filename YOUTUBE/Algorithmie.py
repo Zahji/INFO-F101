@@ -1647,6 +1647,15 @@ def est_carre_magique(matrice):
 
 #126
 
+def produit_matrices(matrice1, matrice2):
+    resultat = [[0] * len(matrice2[0]) for _ in range(len(matrice1))]
+    
+    for i in range(len(matrice1)):
+        for j in range(len(matrice2[0])):
+            for k in range(len(matrice2)):
+                resultat[i][j] += matrice1[i][k] * matrice2[k][j]
+    
+    return resultat
 
 
 #127
