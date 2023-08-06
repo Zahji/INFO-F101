@@ -1541,6 +1541,10 @@ def combinaisons(n, k):
 
 #118
 
+def permutations(n, k):
+    if k == 0:
+        return 1
+    return n * permutations(n - 1, k - 1)
 
 
 #119
