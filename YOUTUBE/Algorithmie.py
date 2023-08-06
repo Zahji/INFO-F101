@@ -1573,7 +1573,23 @@ def sous_liste_maximale(liste):
 
 #121
 
-
+def fusion_compte_inversions(gauche, droite):
+    i = j = inversions = 0
+    resultat = []
+    
+    while i < len(gauche) and j < len(droite):
+        if gauche[i] <= droite[j]:
+            resultat.append(gauche[i])
+            i += 1
+        else:
+            resultat.append(droite[j])
+            j += 1
+            inversions += len(gauche) - i
+    
+    resultat += gauche[i:]
+    resultat += droite[j:]
+    
+    return resultat, inversions
 
 #122
 
