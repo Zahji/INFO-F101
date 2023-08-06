@@ -1533,6 +1533,10 @@ def tri_a_bulles(liste):
 
 #117
 
+def combinaisons(n, k):
+    if k == 0 or k == n:
+        return 1
+    return combinaisons(n - 1, k - 1) + combinaisons(n - 1, k)
 
 
 #118
