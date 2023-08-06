@@ -1619,6 +1619,12 @@ def nombre_voyelles(chaine):
 
 #124
 
+def somme_chiffres(nombre):
+    somme = 0
+    while nombre > 0:
+        somme += nombre % 10
+        nombre //= 10
+    return somme
 
 
 #125
