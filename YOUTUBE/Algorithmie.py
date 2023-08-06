@@ -1517,6 +1517,8 @@ def est_palindrome(chaine):
 
 #115
 
+def plus_grand_nombre(liste):
+    return max(liste)
 
 
 #116
