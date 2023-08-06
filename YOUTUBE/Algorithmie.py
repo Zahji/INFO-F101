@@ -1549,6 +1549,16 @@ def permutations(n, k):
 
 #119
 
+def pgcd_multiple(nombres):
+    def pgcd(a, b):
+        while b:
+            a, b = b, a % b
+        return a
+    
+    result = nombres[0]
+    for i in range(1, len(nombres)):
+        result = pgcd(result, nombres[i])
+    return result
 
 
 #120
