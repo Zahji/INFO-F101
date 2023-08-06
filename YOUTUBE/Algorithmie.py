@@ -1660,6 +1660,8 @@ def produit_matrices(matrice1, matrice2):
 
 #127
 
+def est_anagramme(chaine1, chaine2):
+    return sorted(chaine1) == sorted(chaine2)
 
 
 #128
