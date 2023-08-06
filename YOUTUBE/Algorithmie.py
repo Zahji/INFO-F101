@@ -1608,6 +1608,13 @@ def tri_compte_inversions(liste):
 
 #123
 
+def nombre_voyelles(chaine):
+    voyelles = "aeiouAEIOU"
+    compteur = 0
+    for char in chaine:
+        if char in voyelles:
+            compteur += 1
+    return compteur
 
 
 #124
