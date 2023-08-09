@@ -191,3 +191,11 @@ def example17(n):
             j *= 2
         i *= 2
 O(n log n)
+
+23)
+def example18(n):
+    for i in range(n):
+        for j in range(i):
+            for k in range(j):
+                print(i, j, k)
+O(n^3)
