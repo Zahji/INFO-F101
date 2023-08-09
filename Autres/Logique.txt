@@ -88,4 +88,5 @@ croissant(E) → ∀j · (0 <= j < n - 1) → (E[j+1] > E[j])
 28) Si un vecteur F contient des éléments pairs et des éléments impairs, alors la somme de ses éléments est impaire.
 (∃i · (0 <= i < n) ∧ pair(F[i])) ∧ (∃j · (0 <= j < n) ∧ impair(F[j])) → impair(∑i · (0 <= i < n) F[i])
 
-29)
+29) Si un vecteur I contient des éléments distincts, alors il ne peut pas contenir plus d'éléments que sa taille.
+(∀i, j · (0 <= i < n ∧ 0 <= j < n ∧ i ≠ j) → I[i] ≠ I[j]) → (∀k · (0 <= k < n)) → (I[k] ≠ I[l])
