@@ -154,3 +154,11 @@ def example13(arr):
         prefix_sum[i] = prefix_sum[i - 1] + arr[i]
     return prefix_sum
 O(n)
+
+19)
+def example14(n):
+    if n <= 1:
+        return
+    print(n)
+    example14(n // 2)
+O(log n)
