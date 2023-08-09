@@ -64,6 +64,7 @@ x + y + z = 10
 20) Dans un ensemble de personnes, si certaines aiment la musique et d'autres aiment la danse, alors il y a au moins deux personnes qui ont des préférences différentes.
 ∃x · ∃y · (x ≠ y ∧ (aimeMusique(x) ∧ aimeDanse(y)))
 
-21)
+21) Tous les éléments d'un vecteur B sont égaux entre eux.
+∀i, j · (0 <= i < n ∧ 0 <= j < n) → (B[i] = B[j])
 
 22)
