@@ -199,3 +199,12 @@ def example18(n):
             for k in range(j):
                 print(i, j, k)
 O(n^3)
+
+24)
+def example19(n):
+    for i in range(1, n + 1):
+        j = 1
+        while j < n:
+            print(i, j)
+            j *= 2
+O(n log n)
