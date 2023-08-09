@@ -85,6 +85,7 @@ premier(p) → ∀d · ((d > 1) ∧ (d < p)) → ¬divisible(p, d))
 27) Si un vecteur E est strictement croissant, alors pour tout indice j, l'élément à l'indice j+1 est strictement supérieur à celui à l'indice j.
 croissant(E) → ∀j · (0 <= j < n - 1) → (E[j+1] > E[j])
 
-28)
+28) Si un vecteur F contient des éléments pairs et des éléments impairs, alors la somme de ses éléments est impaire.
+(∃i · (0 <= i < n) ∧ pair(F[i])) ∧ (∃j · (0 <= j < n) ∧ impair(F[j])) → impair(∑i · (0 <= i < n) F[i])
 
 29)
