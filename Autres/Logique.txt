@@ -55,10 +55,11 @@ v = E  W[j]
 17) Aucun élément d'un vecteur A n'est égal à zéro.
 ∀i · (0 <= i < n) → (A[i] ≠ 0)
 
-18)Si le produit de deux variables x et y est négatif, alors l'une d'entre elles est positive et l'autre est négative.
+18) Si le produit de deux variables x et y est négatif, alors l'une d'entre elles est positive et l'autre est négative.
 (x * y) < 0 → ((x > 0) ∧ (y < 0)) ∨ ((x < 0) ∧ (y > 0))
 
-19)
+19) La somme de trois variables x, y et z est égale à 10.
+x + y + z = 10
 
 20)
 
