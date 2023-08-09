@@ -90,3 +90,6 @@ croissant(E) → ∀j · (0 <= j < n - 1) → (E[j+1] > E[j])
 
 29) Si un vecteur I contient des éléments distincts, alors il ne peut pas contenir plus d'éléments que sa taille.
 (∀i, j · (0 <= i < n ∧ 0 <= j < n ∧ i ≠ j) → I[i] ≠ I[j]) → (∀k · (0 <= k < n)) → (I[k] ≠ I[l])
+
+30) Si la somme de trois nombres consécutifs est égale à 60, alors chacun de ces nombres est égal à 20.
+(x + (x + 1) + (x + 2) = 60) → (x = 20)
