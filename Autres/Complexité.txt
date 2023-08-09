@@ -55,6 +55,10 @@ def example1(arr):
 O(n)
 
 7)
+def example2(n):
+    for i in range(n):
+        print(i)
+O(n)
 
 8)
 
