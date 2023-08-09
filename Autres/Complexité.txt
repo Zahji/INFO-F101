@@ -208,3 +208,12 @@ def example19(n):
             print(i, j)
             j *= 2
 O(n log n)
+
+25)
+def example20(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n):
+            if i != j:
+                print(arr[i], arr[j])
+O(n^2)
