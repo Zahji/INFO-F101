@@ -46,4 +46,5 @@ v = E  W[j]
 14) Les cases comprises entre les indices k1 et k2 du vecteur V sont triées (de façon nondecroissante).
  ∀j · (k1 <= j < k2) → (V[j] <= V[j + 1])
 
-
+15)Tous les éléments d'un vecteur W sont strictement positifs.
+∀i · (0 <= i < n) → (W[i] > 0)
