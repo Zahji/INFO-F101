@@ -227,3 +227,12 @@ def example21(n):
         total += j
     return total
 O(n)
+
+27)
+def example22(n):
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                print(i, j, k)
+O(n^3)
+
