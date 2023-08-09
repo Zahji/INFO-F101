@@ -79,7 +79,8 @@ divisible(n, 6) → (divisible(n, 2) ∧ divisible(n, 3))
 25) Si un vecteur C contient au moins un élément négatif, alors il contient également au moins un élément positif.
 ∃i · (0 <= i < n) ∧ (C[i] < 0) → ∃j · (0 <= j < n) ∧ (C[j] > 0)
 
-26)
+26) Si un nombre est premier, alors il n'a pas de diviseurs autres que 1 et lui-même.
+premier(p) → ∀d · ((d > 1) ∧ (d < p)) → ¬divisible(p, d))
 
 27)
 
