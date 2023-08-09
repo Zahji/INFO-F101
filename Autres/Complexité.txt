@@ -217,3 +217,13 @@ def example20(arr):
             if i != j:
                 print(arr[i], arr[j])
 O(n^2)
+
+26)
+def example21(n):
+    total = 0
+    for i in range(n):
+        total += i
+    for j in range(n):
+        total += j
+    return total
+O(n)
