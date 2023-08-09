@@ -46,5 +46,8 @@ v = E  W[j]
 14) Les cases comprises entre les indices k1 et k2 du vecteur V sont triées (de façon nondecroissante).
  ∀j · (k1 <= j < k2) → (V[j] <= V[j + 1])
 
-15)Tous les éléments d'un vecteur W sont strictement positifs.
+15) Tous les éléments d'un vecteur W sont strictement positifs.
 ∀i · (0 <= i < n) → (W[i] > 0)
+
+16) Si la somme de deux variables x et y est paire, alors au moins l'une d'entre elles est paire.
+(x + y) mod 2 = 0 → (x mod 2 = 0) ∨ (y mod 2 = 0)
