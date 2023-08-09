@@ -102,4 +102,9 @@ def example7(arr):
 O(n)
 
 13)
+def example8(n):
+    for i in range(n):
+        for j in range(i):
+            print(i, j)
+O(n^2)
 
