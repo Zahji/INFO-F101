@@ -51,3 +51,16 @@ v = E  W[j]
 
 16) Si la somme de deux variables x et y est paire, alors au moins l'une d'entre elles est paire.
 (x + y) mod 2 = 0 → (x mod 2 = 0) ∨ (y mod 2 = 0)
+
+17) Aucun élément d'un vecteur A n'est égal à zéro.
+∀i · (0 <= i < n) → (A[i] ≠ 0)
+
+18)
+
+19)
+
+20)
+
+21)
+
+22)
