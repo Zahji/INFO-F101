@@ -61,7 +61,8 @@ v = E  W[j]
 19) La somme de trois variables x, y et z est égale à 10.
 x + y + z = 10
 
-20)
+20) Dans un ensemble de personnes, si certaines aiment la musique et d'autres aiment la danse, alors il y a au moins deux personnes qui ont des préférences différentes.
+∃x · ∃y · (x ≠ y ∧ (aimeMusique(x) ∧ aimeDanse(y)))
 
 21)
 
