@@ -61,8 +61,14 @@ def example2(n):
 O(n)
 
 8)
+def example3(n):
+    for i in range(n):
+        for j in range(n):
+            print(i, j)
+O(n^2)
 
 9)
+
 
 10)
 
