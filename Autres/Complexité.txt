@@ -123,3 +123,13 @@ def example10(n):
             for k in range(n):
                 print(i, j, k)
 O(n^3)
+
+16)
+def example11(arr):
+    n = len(arr)
+    for i in range(n):
+        print(arr[i])
+    for j in range(n):
+        for k in range(n):
+            print(arr[j], arr[k])
+O(n^2)
