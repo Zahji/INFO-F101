@@ -69,3 +69,6 @@ x + y + z = 10
 
 22) Si le carré d'un nombre réel x est inférieur à 1, alors x lui-même est inférieur à 1 en valeur absolue.
 (x^2 < 1) → (|x| < 1)
+
+23) Dans un groupe d'amis, si Alice est amie avec Bob et Bob est amie avec Carol, alors Alice est amie avec Carol.
+amie(Alice, Bob) ∧ amie(Bob, Carol) → amie(Alice, Carol)
