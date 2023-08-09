@@ -251,3 +251,12 @@ def example24(arr):
         for j in range(n):
             print(arr[i], arr[j])
 O(n^2)
+
+30)
+def example25(n):
+    for i in range(1, n + 1):
+        j = 1
+        while j < n:
+            print(i, j)
+            j *= 3
+O(log n)
