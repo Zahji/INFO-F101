@@ -76,7 +76,8 @@ amie(Alice, Bob) ∧ amie(Bob, Carol) → amie(Alice, Carol)
 24) Si un nombre est divisible par 6, alors il est divisible à la fois par 2 et par 3.
 divisible(n, 6) → (divisible(n, 2) ∧ divisible(n, 3))
 
-25)
+25) Si un vecteur C contient au moins un élément négatif, alors il contient également au moins un élément positif.
+∃i · (0 <= i < n) ∧ (C[i] < 0) → ∃j · (0 <= j < n) ∧ (C[j] > 0)
 
 26)
 
