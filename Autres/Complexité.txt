@@ -180,3 +180,14 @@ def example16(arr):
             for k in range(n):
                 print(arr[i], arr[j], arr[k])
 O(n^3)
+
+22)
+def example17(n):
+    i = 1
+    while i < n:
+        j = 1
+        while j < i:
+            print(i, j)
+            j *= 2
+        i *= 2
+O(n log n)
