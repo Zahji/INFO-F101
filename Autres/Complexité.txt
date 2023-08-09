@@ -162,3 +162,12 @@ def example14(n):
     print(n)
     example14(n // 2)
 O(log n)
+
+20)
+def example15(n):
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            print(i, j)
+            if j == i:
+                break
+O(n^2)
