@@ -72,3 +72,16 @@ x + y + z = 10
 
 23) Dans un groupe d'amis, si Alice est amie avec Bob et Bob est amie avec Carol, alors Alice est amie avec Carol.
 amie(Alice, Bob) ∧ amie(Bob, Carol) → amie(Alice, Carol)
+
+24) Si un nombre est divisible par 6, alors il est divisible à la fois par 2 et par 3.
+divisible(n, 6) → (divisible(n, 2) ∧ divisible(n, 3))
+
+25)
+
+26)
+
+27)
+
+28)
+
+29)
