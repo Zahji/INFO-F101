@@ -115,7 +115,8 @@ divisible(n, 10) → divisible(n, 5)
 37) Si un nombre est un cube parfait et n'est pas divisible par 4, alors il est divisible par 8.
 (cubeParfait(n) ∧ ¬divisible(n, 4)) → divisible(n, 8)
 
-38)
+38) Si chaque élément d'un vecteur M est au moins égal à 5, alors la moyenne de ses éléments est également au moins égale à 5.
+(∀i · (0 <= i < n) → (M[i] >= 5)) → ((∑i · (0 <= i < n) M[i]) / n) >= 5
 
 39)
 
