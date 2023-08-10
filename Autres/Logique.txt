@@ -133,7 +133,8 @@ périmètre(rectangle) = 24 → (longueur(rectangle) = largeur(rectangle))
 43) Dans un vecteur P, si chaque élément est soit positif, soit nul, alors la somme des éléments de P est positif ou nulle.
 (∀i · (0 <= i < n) → (P[i] >= 0)) → (∑i · (0 <= i < n) P[i] >= 0)
 
-44)
+44) Si un nombre est premier, alors il n'est divisible par aucun nombre premier plus grand que sa racine carrée.
+premier(n) → (∀p · (p est un nombre premier) ∧ (p > √n) → ¬divisible(n, p))
 
 45)
 
