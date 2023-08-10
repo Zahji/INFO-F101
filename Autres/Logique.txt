@@ -100,7 +100,8 @@ croissant(E) → ∀j · (0 <= j < n - 1) → (E[j+1] > E[j])
 32) Si un nombre est divisible par 9, alors la somme de ses chiffres est également divisible par 9.
 divisible(n, 9) → divisible(∑d · (d est un chiffre de n))
 
-33)
+33) Dans un groupe de personnes, si chacun connaît exactement deux autres personnes, alors il y a un nombre pair de personnes dans le groupe.
+∀x · (∃y1 · (∃y2 · (y1 ≠ y2 ∧ connait(x, y1) ∧ connait(x, y2)))) → nombrePairDePersonnes(groupe)
 
 34)
 
