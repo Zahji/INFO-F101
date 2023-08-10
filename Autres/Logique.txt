@@ -127,4 +127,5 @@ périmètre(rectangle) = 24 → (longueur(rectangle) = largeur(rectangle))
 41) Si un vecteur N contient des éléments positifs et des éléments négatifs, alors la somme de ses éléments est non nulle.
 (∃i · (0 <= i < n) ∧ (N[i] > 0)) ∧ (∃j · (0 <= j < n) ∧ (N[j] < 0)) → (∑i · (0 <= i < n) N[i] ≠ 0)
 
-42)
+42) Si la différence entre deux nombres x et y est supérieure à 10, alors x est supérieur à y.
+(x - y) > 10 → (x > y)
