@@ -129,3 +129,12 @@ périmètre(rectangle) = 24 → (longueur(rectangle) = largeur(rectangle))
 
 42) Si la différence entre deux nombres x et y est supérieure à 10, alors x est supérieur à y.
 (x - y) > 10 → (x > y)
+
+43) Dans un vecteur P, si chaque élément est soit positif, soit nul, alors la somme des éléments de P est positif ou nulle.
+(∀i · (0 <= i < n) → (P[i] >= 0)) → (∑i · (0 <= i < n) P[i] >= 0)
+
+44)
+
+45)
+
+46)
