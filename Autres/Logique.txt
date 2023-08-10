@@ -139,4 +139,5 @@ premier(n) → (∀p · (p est un nombre premier) ∧ (p > √n) → ¬divisible
 45) Si un triangle est équilatéral, alors ses trois angles internes sont égaux.
 triangleEquilatéral(triangle) → (angle1 = angle2 = angle3)
 
-46)
+46) Si un vecteur R contient uniquement des éléments positifs, alors la moyenne de ses éléments est également positive.
+(∀i · (0 <= i < n) → (R[i] > 0)) → ((∑i · (0 <= i < n) R[i]) / n) > 0
