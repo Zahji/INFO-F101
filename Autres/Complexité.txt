@@ -288,7 +288,15 @@ def example28(n):
 O(log n)
 
 34)
-
+def example29(arr):
+    total = 0
+    n = len(arr)
+    for i in range(n):
+        total += arr[i]
+    for j in range(n):
+        total -= arr[j]
+    return total
+O(n)
 
 35)
 
