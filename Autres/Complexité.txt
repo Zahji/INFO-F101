@@ -309,6 +309,14 @@ def example30(n):
 O(n^3)
 
 36)
+def example31(n):
+    total = 0
+    for i in range(n):
+        total += i
+    for j in range(2 * n):
+        total += j
+    return total
+O(n)
 
 37)
 
