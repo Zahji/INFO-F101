@@ -299,6 +299,14 @@ def example29(arr):
 O(n)
 
 35)
+def example30(n):
+    for i in range(n):
+        for j in range(i):
+            for k in range(j):
+                print(i, j, k)
+                if k > i * j:
+                    break
+O(n^3)
 
 36)
 
