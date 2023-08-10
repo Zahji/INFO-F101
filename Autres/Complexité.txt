@@ -348,3 +348,11 @@ def example34(n):
 O(log n)
 
 40)
+def example35(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                for l in range(n):
+                    print(arr[i], arr[j], arr[k], arr[l])
+O(n^4)
