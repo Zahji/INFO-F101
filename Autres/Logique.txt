@@ -93,3 +93,28 @@ croissant(E) → ∀j · (0 <= j < n - 1) → (E[j+1] > E[j])
 
 30) Si la somme de trois nombres consécutifs est égale à 60, alors chacun de ces nombres est égal à 20.
 (x + (x + 1) + (x + 2) = 60) → (x = 20)
+
+31) Si un vecteur J contient au moins un élément négatif et au moins un élément positif, alors la somme de ses éléments est non nulle.
+(∃i · (0 <= i < n) ∧ (J[i] < 0)) ∧ (∃j · (0 <= j < n) ∧ (J[j] > 0)) → (∑i · (0 <= i < n) J[i] ≠ 0)
+
+32)
+
+33)
+
+34)
+
+35)
+
+36)
+
+37)
+
+38)
+
+39)
+
+40)
+
+41)
+
+42)
