@@ -103,7 +103,8 @@ divisible(n, 9) → divisible(∑d · (d est un chiffre de n))
 33) Dans un groupe de personnes, si chacun connaît exactement deux autres personnes, alors il y a un nombre pair de personnes dans le groupe.
 ∀x · (∃y1 · (∃y2 · (y1 ≠ y2 ∧ connait(x, y1) ∧ connait(x, y2)))) → nombrePairDePersonnes(groupe)
 
-34)
+34) Si un vecteur K contient des éléments qui sont des carrés parfaits, alors chaque élément de K est positif.
+∀i · (0 <= i < n) → (carreParfait(K[i]) → (K[i] > 0))
 
 35)
 
