@@ -118,7 +118,8 @@ divisible(n, 10) → divisible(n, 5)
 38) Si chaque élément d'un vecteur M est au moins égal à 5, alors la moyenne de ses éléments est également au moins égale à 5.
 (∀i · (0 <= i < n) → (M[i] >= 5)) → ((∑i · (0 <= i < n) M[i]) / n) >= 5
 
-39)
+39) Si un rectangle a un périmètre de 24 unités, alors l'aire du rectangle est maximisée lorsque ses côtés sont égaux (c'est un carré).
+périmètre(rectangle) = 24 → (longueur(rectangle) = largeur(rectangle))
 
 40)
 
