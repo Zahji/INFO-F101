@@ -97,7 +97,8 @@ croissant(E) → ∀j · (0 <= j < n - 1) → (E[j+1] > E[j])
 31) Si un vecteur J contient au moins un élément négatif et au moins un élément positif, alors la somme de ses éléments est non nulle.
 (∃i · (0 <= i < n) ∧ (J[i] < 0)) ∧ (∃j · (0 <= j < n) ∧ (J[j] > 0)) → (∑i · (0 <= i < n) J[i] ≠ 0)
 
-32)
+32) Si un nombre est divisible par 9, alors la somme de ses chiffres est également divisible par 9.
+divisible(n, 9) → divisible(∑d · (d est un chiffre de n))
 
 33)
 
