@@ -106,7 +106,8 @@ divisible(n, 9) → divisible(∑d · (d est un chiffre de n))
 34) Si un vecteur K contient des éléments qui sont des carrés parfaits, alors chaque élément de K est positif.
 ∀i · (0 <= i < n) → (carreParfait(K[i]) → (K[i] > 0))
 
-35)
+35) Si un nombre est un multiple de 10, alors il est également un multiple de 5.
+divisible(n, 10) → divisible(n, 5)
 
 36)
 
