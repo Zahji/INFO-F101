@@ -261,7 +261,8 @@ def example25(n):
             j *= 3
 O(log n)
 
-31) def example26(n):
+31) 
+def example26(n):
     total = 0
     for i in range(n):
         for j in range(i):
@@ -269,7 +270,14 @@ O(log n)
     return total
 O(n^2)
 
-32)
+32) 
+def example27(n):
+    for i in range(n):
+        j = n
+        while j > 1:
+            print(i, j)
+            j //= 2
+O(n log n)
 
 33)
 
