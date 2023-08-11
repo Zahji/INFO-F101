@@ -146,6 +146,16 @@ class Voiture:
 
 # Exo 11 :
 
+class Livre:
+    def __init__(self, titre, auteur, annee):
+        self.titre = titre
+        self.auteur = auteur
+        self.annee = annee
+    
+    def afficher_info(self):
+        print(f"Titre: {self.titre}, Auteur: {self.auteur}, Année: {self.annee}")
+
+
 # Exo 12 :
 
 # Exo 13 :
