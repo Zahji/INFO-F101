@@ -437,6 +437,13 @@ def example43(arr):
 O(n^4)
 
 49)
+def example44(n):
+    for i in range(1, n + 1):
+        j = 1
+        while j < n:
+            print(i, j)
+            j *= 3
+O(log n)
 
 50)
 
