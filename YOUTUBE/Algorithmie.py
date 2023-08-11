@@ -1666,11 +1666,22 @@ def est_anagramme(chaine1, chaine2):
 
 #128
 
+def est_palindrome(chaine):
+    return chaine == chaine[::-1]
+
+def plus_grand_palindrome(liste):
+    palindromes = [mot for mot in liste if est_palindrome(mot)]
+    if not palindromes:
+        return None
+    return max(palindromes, key=len)
 
 
 #129
 
-
+def moyenne_ponderee(notes, poids):
+    somme_produit = sum(note * poids for note, poids in zip(notes, poids))
+    somme_poids = sum(poids)
+    return somme_produit / somme_poids
 
 #130
 
