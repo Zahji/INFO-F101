@@ -147,15 +147,6 @@ def plus_grand_palindrome(liste):
 
 # Exo 11 :
 
-def est_palindrome(chaine):
-    return chaine == chaine[::-1]
-
-def plus_grand_palindrome(liste):
-    palindromes = [mot for mot in liste if est_palindrome(mot)]
-    if not palindromes:
-        return None
-    return max(palindromes, key=len)
-
 # Exo 12 :
 
 # Exo 13 :
