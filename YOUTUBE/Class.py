@@ -158,4 +158,16 @@ class Livre:
 
 # Exo 12 :
 
+class Etudiant:
+    def __init__(self, nom, age, note_maths, note_physique):
+        self.nom = nom
+        self.age = age
+        self.note_maths = note_maths
+        self.note_physique = note_physique
+    
+    def afficher_moyenne(self):
+        moyenne = (self.note_maths + self.note_physique) / 2
+        print(f"Moyenne de {self.nom}: {moyenne}")
+
+
 # Exo 13 :
