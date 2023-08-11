@@ -1685,6 +1685,8 @@ def moyenne_ponderee(notes, poids):
 
 #130
 
+def liste_inverse(liste):
+    return liste[::-1]
 
 
 
