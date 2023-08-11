@@ -420,8 +420,14 @@ def example41(n):
 O(n^2)
 
 47)
+def example42(n):
+    for i in range(n):
+        for j in range(i, n):
+            print(i, j)
+O(n^2)
 
 48)
+
 
 49)
 
