@@ -356,3 +356,37 @@ def example35(arr):
                 for l in range(n):
                     print(arr[i], arr[j], arr[k], arr[l])
 O(n^4)
+
+41)
+def example36(n):
+    i = 1
+    while i < n:
+        j = 1
+        while j < i:
+            k = 1
+            while k < j:
+                print(i, j, k)
+                k *= 2
+            j *= 2
+        i *= 2
+O(log^3 n)
+
+42)
+
+43)
+
+44)
+
+45)
+
+46)
+
+47)
+
+48)
+
+49)
+
+50)
+
+51)
