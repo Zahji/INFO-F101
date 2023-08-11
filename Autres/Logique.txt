@@ -141,3 +141,12 @@ triangleEquilatéral(triangle) → (angle1 = angle2 = angle3)
 
 46) Si un vecteur R contient uniquement des éléments positifs, alors la moyenne de ses éléments est également positive.
 (∀i · (0 <= i < n) → (R[i] > 0)) → ((∑i · (0 <= i < n) R[i]) / n) > 0
+
+47) Si un vecteur S est strictement décroissant et contient au moins deux éléments, alors le premier élément est strictement supérieur au dernier élément.
+(décroissant(S) ∧ (∃i, j · (0 <= i < n ∧ 0 <= j < n ∧ i ≠ j))) → (S[0] > S[n - 1])
+
+48)
+
+49)
+
+50)
