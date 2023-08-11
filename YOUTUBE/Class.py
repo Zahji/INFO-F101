@@ -135,6 +135,16 @@ point1.afficher_coordonnees()
 
 # Exo 10 :
 
+def est_palindrome(chaine):
+    return chaine == chaine[::-1]
+
+def plus_grand_palindrome(liste):
+    palindromes = [mot for mot in liste if est_palindrome(mot)]
+    if not palindromes:
+        return None
+    return max(palindromes, key=len)
+
+
 # Exo 11 :
 
 # Exo 12 :
