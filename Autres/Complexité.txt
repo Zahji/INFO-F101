@@ -383,6 +383,13 @@ def example37(n):
 O(n^2)
 
 43)
+def example38(arr):
+    n = len(arr)
+    prefix_sum = [0] * n
+    for i in range(n):
+        prefix_sum[i] = arr[i] + (prefix_sum[i - 1] if i > 0 else 0)
+    return prefix_sum
+O(n)
 
 44)
 
