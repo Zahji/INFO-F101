@@ -392,6 +392,12 @@ def example38(arr):
 O(n)
 
 44)
+def example39(n):
+    for i in range(n):
+        for j in range(1, n):
+            for k in range(1, n):
+                print(i, j, k)
+O(n^2)
 
 45)
 
