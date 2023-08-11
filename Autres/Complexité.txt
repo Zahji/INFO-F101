@@ -411,6 +411,13 @@ def example40(arr):
 O(n^3)
 
 46)
+def example41(n):
+    total = 0
+    for i in range(n):
+        for j in range(n):
+            total += i * j
+    return total
+O(n^2)
 
 47)
 
