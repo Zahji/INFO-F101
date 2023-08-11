@@ -372,6 +372,15 @@ def example36(n):
 O(log^3 n)
 
 42)
+def example37(n):
+    total = 0
+    for i in range(n):
+        total += i
+    for j in range(n):
+        for k in range(n):
+            total += j + k
+    return total
+O(n^2)
 
 43)
 
