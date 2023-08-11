@@ -151,4 +151,5 @@ triangleEquilatéral(triangle) → (angle1 = angle2 = angle3)
 49) Si un vecteur T contient au moins un élément positif et au moins un élément négatif, alors la somme de ses éléments est non nulle.
 (∃i · (0 <= i < n) ∧ (T[i] > 0)) ∧ (∃j · (0 <= j < n) ∧ (T[j] < 0)) → (∑i · (0 <= i < n) T[i] ≠ 0)
 
-50)
+50) Si un nombre est un multiple de 6 et de 8, alors il est également un multiple de leur plus petit commun multiple (24).
+(divisible(n, 6) ∧ divisible(n, 8)) → divisible(n, 24)
