@@ -427,7 +427,14 @@ def example42(n):
 O(n^2)
 
 48)
-
+def example43(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(i):
+            for k in range(j):
+                for l in range(n):
+                    print(arr[i], arr[j], arr[k], arr[l])
+O(n^4)
 
 49)
 
