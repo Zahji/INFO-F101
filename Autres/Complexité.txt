@@ -446,5 +446,13 @@ def example44(n):
 O(log n)
 
 50)
-
-51)
+def example45(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                for l in range(n):
+                    print(arr[i], arr[j], arr[k], arr[l])
+                    if k > i * j:
+                        break
+O(n^4)
