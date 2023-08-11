@@ -400,6 +400,15 @@ def example39(n):
 O(n^2)
 
 45)
+def example40(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(i):
+            for k in range(j):
+                print(arr[i], arr[j], arr[k])
+                if k > i * j:
+                    break
+O(n^3)
 
 46)
 
